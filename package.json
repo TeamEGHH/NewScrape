@@ -1,0 +1,17 @@
+{
+  "name"                 : "Frettaveitan",
+  "version"              : "0.0.0",
+  "description"          : "Icelandic news",
+  "main"                 : "server.js",
+  "scripts"              : {
+    "test"               : "echo \"Error: no test specified\" && exit 1"
+  },
+  "author"               : "EGHH",
+  "license"              : "MIT",
+  "dependencies"         : {
+    "express"            : "^3.5.0",
+    "request"			 : "latest",
+    "cheerio"			 : "latest",
+    "iconv"				 : "latest"
+  }
+}
