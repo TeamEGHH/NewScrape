@@ -1,0 +1,56 @@
+*************************************************************************************
+/***********************************   Uppsetning ***********************************\
+*************************************************************************************
+
+NodeJS og MongoDB og verður að vera uppsett.
+Bæði verða að vera í Path, svo það sé hægt að nota þetta í command window.
+
+1. Opna command window í NewScrape möppunni og skrifa: npm install
+	Til þess að installa öllum pökkunum sem eru taldir upp
+	í package.json skránni.
+
+2. Opna mongodb.conf og breyta dbPath og path þannig að það skrifi inn í 
+	data möppuna í NewScrape möppunni ykkar.
+	Hjá mér t.d.: dbPath: "C:/Users/Hjortur/Desktop/NewScrape/data"
+		ATH: * Skástrikin eru "/" ekki "\"
+			 * Ég hef lent í því að þessi skipun virki ekki ef það er bil eða
+			   bandstrik í þessu path-i.
+	Það er bara þörf á þessu af því að við erum að skrifa í database sem
+	er local á tölvunni okkar, ég reikna með að þetta verði ekkert vesen þegar
+	þetta fer að keyra á server.
+
+3. Fara í command window og vera í NewScrape möppunni og skrifa:
+	mongod --config mongodb.conf
+	Þá ætti command glugginn að vera fastur í þessari skipun, og við
+	látum það vera svolieðis og höldum glugganum opnum.
+	Þetta lætur MongoDB fá stillingarnar sem við viljum hafa fyrir
+	gagnagrunninn okkar.
+
+4. Opna annan command window í NewScrape möppunni og skrifa: mongo
+	Þá erum við búnir að starta local MongoDB gagnagrunni.
+	Ætti að birtast eitthvað í líkingu við þetta:
+	C:\Users\Hjortur\Desktop\NewScrape>mongo
+	MongoDB shell version: 2.6.7
+	connecting to: test
+
+	Höldum glugganum opnum.
+
+5. Opnum þriðja command window og skrifum þar: node bot.js
+	Þetta keyrir bot.js skránna sem að kallar á Model.js og Scrape.js
+	skrárnar.
+	Þegar það stendur "Done!!!" neðst í þeim command window erum við búnir
+	að safna þeim gögnum sem við ætlum að safna og skrifa þau í MongoDB.
+
+6. Opna command window þar sem við skrifuðum "mongo".
+	Þar getum við ferðast um og skoðað gögnin okkar.
+	show dbs - sýnir okkur þau database sem eru til staðar, við erum að nota test.
+	use test - velur test database-ið
+	show collections - sýnir okkur þau collections sem eru inn í núverandi database-i
+						ættum að sjá articles ef búið var að skrifa "use test" á undan.
+	db.articles.find() - sýnir okkur öll gögnin inn í articles collection-inu
+
+7 Optional: Hægt að fara í command gluggann þar sem við skrifuðum node bot.js t.d.
+			og skrifa mongoexport --db test --collection articles --out C:\slóð á desktop\data.json
+			til þess að exporta úr MongoDB og í json skrá, til þess að skoða gögnin.
+			Mæli svo með jsonlint.com eða html/css/js prettify pakkanum fyrir sublime til
+			þess að fá rétt indents og svona svo það sé hægt að lesa þetta.
