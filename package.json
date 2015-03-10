@@ -13,9 +13,9 @@
     "request"			       : "latest",
     "http"               : "latest",
     "cheerio"			       : "latest",
-    "iconv"				       : "latest",
+    "iconv-lite"		     : "latest",
     "jquery"             : "latest",
-    "mongoose"           : "latest",
+    "mongoose-q"         : "latest",
     "util"               : "latest"
   }
 }
