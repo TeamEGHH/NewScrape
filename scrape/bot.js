@@ -97,7 +97,7 @@ Media = ScrapeObjects.medias;
 //Pages array are done.
 function wizard() {
     if (!Pages.length) {
-        return console.log('Done!!!!');
+        return console.log('Done!');
     }
 
     var url = Pages.pop();
@@ -127,7 +127,15 @@ function wizard() {
         //add tags if duplicate
         model.save(function (err) {
             if (err) {
-                console.log('Database error saving');
+                if (err.code == 11000) {
+                    console.log('Article not added to database because it is already there');
+                }
+                else if(err.message == 'Validation failed'){
+                    console.log('Article not added to database bacause it has no ' + Object.keys(err.errors));
+                }
+                else{
+                    console.log('Database error saving');   
+                }
             }
         });
     });
