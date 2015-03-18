@@ -115,7 +115,7 @@ Scraper.prototype.parsePage = function (html) {
                 headline2    = headline2.replace(/\n    |\n\n| \n|\n |\t\n|\n\t/g, "");
                 image        = data.find(medium.image).attr('srcset');
                 href         = medium.url + data.find(medium.hreflink).attr('href');
-                time         = data.find(".publish-time").text();
+                time         = getTimeStamp();
                 tags         = getTags();
             }
 
@@ -137,7 +137,7 @@ Scraper.prototype.parsePage = function (html) {
                 headline2    = headline2.replace(/(\r\n|\n|\r|\t)/gm, "");
                 image        = data.find(medium.image).attr('src');
                 href         = medium.url + data.find(medium.hreflink).attr('href');
-                time         = data.find('.meta .date').eq(1).text() + " " + data.find('.meta .date').eq(0).text();
+                time         = getTimeStamp();
                 tags         = getTags();
             }
 
@@ -189,14 +189,7 @@ Scraper.prototype.parsePage = function (html) {
     //Væri lang best að geta sótt réttann tíma á fréttinni
     //af vefsíðunni.
     function getTimeStamp() {
-        var d       = new Date();
-        var month   = d.getMonth() + 1;
-        var day     = d.getDate();
-        var hour    = d.getHours();
-        var minutes = d.getMinutes();
-        var year    = d.getFullYear();
-
-        return hour + ":" + minutes + " " + day + "." + (month < 10 ? '0' : '') + "." + year;
+        return new Date();
     }
 
     //Ber saman urlið á requestinu við groups objectið.
