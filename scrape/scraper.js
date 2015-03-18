@@ -162,6 +162,9 @@ Scraper.prototype.parsePage = function (html) {
                 headline2    = data.find(medium.headline2).text();
                 headline2    = headline2.replace(/\n/g, "");
                 image        = data.find(medium.image).attr('src');
+                if(image == undefined) {
+                    return true;
+                }
                 href         = data.find(medium.hreflink).attr('href');
                 time         = getTimeStamp();
                 tags         = getTags();

@@ -9,7 +9,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/loadnews", function (req, res) {
-	var batch = 24;
+	var batch = 25;
 	var skip = 0;
     Articles.find({}).skip(skip).limit(batch)
         .execQ()
