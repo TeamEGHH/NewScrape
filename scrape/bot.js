@@ -134,6 +134,8 @@ function wizard() {
 
 
 //Lets kick things off
-wizard();
+for (var i = 0; i < 5; i++) {
+    wizard();
+}
 
 module.exports = Scraper;

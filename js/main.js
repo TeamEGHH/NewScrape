@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	
-
+/*
   $("div.blog-post").hover(
     function() {
         $(this).find("div.content-hide").slideToggle("fast");
@@ -10,6 +10,7 @@ $(document).ready(function() {
         $(this).find("div.content-hide").slideToggle("fast");
     }
   );
+*/
 
   $('.flexslider').flexslider({
 		prevText: '',
