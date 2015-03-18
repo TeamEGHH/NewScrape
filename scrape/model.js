@@ -6,12 +6,31 @@ mongoose.connection.on('error', function () {
 });
 
 var articleSchema = new mongoose.Schema({
-    medium: String,
-    headline1: String,
-    headline2: String,
-    image: String,
-    href: String,
-    time: String,
+    medium: {
+    	type: String,
+    	required: true
+    },
+    headline1: {
+    	type: String,
+    	required: true,
+    	unique: true
+    },
+    headline2: {
+    	type: String,
+    	required: true
+    },
+    image: {
+    	type: String,
+    	required: true
+    },
+    href: {
+    	type: String,
+    	required: true
+    },
+    time: {
+    	type: String,
+    	required: true
+    },
     tags: Array
 });
 

@@ -124,6 +124,7 @@ function wizard() {
     //save it to our database.
     scraper.on('save', function (article) {
         model = new Model(article);
+        //add tags if duplicate
         model.save(function (err) {
             if (err) {
                 console.log('Database error saving');
@@ -134,6 +135,8 @@ function wizard() {
 
 
 //Lets kick things off
-wizard();
+for (var i = 0; i < 5; i++) {
+    wizard();
+}
 
 module.exports = Scraper;
