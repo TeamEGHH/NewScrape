@@ -17,7 +17,7 @@ var media_objects = {
         headline1: ".headlines h1",
         headline2: ".headlines h2",
         subsites: ["/frettir/innlent", "/frettir/erlent", "/frettir/stjornmal", "/frettir/teakni", "/frettir/vidskipti", "/musik", "/sport", "/folk"]
-    }/*,
+    },
     ruv: {
         name: "RUV",
         url: "http://ruv.is",
@@ -58,7 +58,6 @@ var media_objects = {
         headline2: "div .entry-content",
         subsites: ["/folk", "/politik", "/utlond"]
     }
-    */
 };
 
 

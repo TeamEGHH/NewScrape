@@ -1,4 +1,3 @@
-;
 (function ($) {
 
   //FlexSlider: Object Instance
