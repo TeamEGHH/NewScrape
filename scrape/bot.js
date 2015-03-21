@@ -3,6 +3,7 @@ var Scraper = require('./scraper');
 var mongoose = require('mongoose-q')();
 var Pages = [];
 var Medias = [];
+var dresl;
 
 /*
  * Initialize several media sites for scraping
@@ -125,6 +126,7 @@ function wizard() {
     scraper.on('save', function (article) {
         model = new Model(article);
         //add tags if duplicate
+        
         model.save(function (err) {
             if (err) {
                 if (err.code == 11000) {
