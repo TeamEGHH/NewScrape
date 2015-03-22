@@ -28,8 +28,8 @@ var articleSchema = new mongoose.Schema({
     	required: true
     },
     time: {
-    	type: String,
-    	required: true
+    	type: Date,
+    	required: true,
     },
     tags: Array
 });
