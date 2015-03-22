@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
 app.get("/loadnews", function (req, res) {
 	var batch = 25;
 	var skip = 0;
-    Articles.find({medium: "VISIR"}).skip(skip).limit(batch)
+    Articles.find({medium: "VISIR"}).sort({time: -1}).skip(skip).limit(batch)
         .execQ()
     	.then(function (result) {
     		res.send(JSON.stringify(result));
