@@ -2,23 +2,9 @@
  * Global variables. Marked with _g wich indicates that it
  * is a global variable.
  */
-var g_menu = $('#header'); //The header div
-var g_menu_pos = g_menu.offset(); //The position of the header div
-var g_image_header = $('.image-header');
-var g_wall = new freewall('#freewall');
-g_wall.fitWidth();
-g_wall.reset({
-    selector: '.brick',
-    animate: true,
-    cellW: 250,
-    cellH: 'auto',
-    onRezise: function() {
-        g_wall.fitWidth();
-    }
-});
+ var g_menu, g_wall, g_menu_pos, g_image_header;
 
 $(document).ready(function() {
-
     /*
      * Fetch data from mongodb and append the data
      * to index.html
@@ -32,12 +18,13 @@ $(document).ready(function() {
                 });
         });
     }
+
     /*
      * Helper function for fetch_and_display:
      * Writes data to html using Handlebars.js
      */
     function writeHTML(data) {
-        for (var i=0; i<data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
             data[i].time = moment(data[i].time).fromNow();
         }
         var source = $("#row_template").html();
@@ -45,6 +32,7 @@ $(document).ready(function() {
         $("#freewall").append(template(data));
         return $.ajax();
     }
+
     /*
      * Helper function for fetch_and_display:
      * jQuery effects, ran after all the html data
@@ -54,6 +42,12 @@ $(document).ready(function() {
         g_wall.container.find('.brick img').load(function() {
             g_wall.fitWidth();
         });
+
+        $('.medium-and-time').addClass('medium-and-time-pos');
+
+        g_menu = $('#header'); //The header div
+        g_menu_pos = g_menu.offset(); //The position of the header div
+        g_image_header = $('.image-header');
     }
 
     /*

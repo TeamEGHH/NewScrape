@@ -40,12 +40,18 @@ body {
 }
 
 .medium-and-time {
-  position: fixed top;
   color:white;
   padding-left:1em;
   padding-top:0.2em;
   z-index:5;
   height: 2em;
+}
+
+.medium-and-time-pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .medium-and-time img {
@@ -55,8 +61,6 @@ body {
 .medium-and-time a {
   color: white;
 }
-
-
 
 .VISIR{
   background-color: rgba(111, 138, 242, 0.8);
