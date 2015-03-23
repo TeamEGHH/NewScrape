@@ -28,5 +28,6 @@ node_modules
 
 #Personal stuff
 scrape/mongodb.conf
+scrape/mongodb.log
 
 data
