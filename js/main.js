@@ -43,6 +43,8 @@ $(document).ready(function() {
             g_wall.fitWidth();
         });
 
+        //This is done to avoid prevoius odd behaviour of the medium-and-time class
+        //positioning. So we add the position after everything has been loaded.
         $('.medium-and-time').addClass('medium-and-time-pos');
 
         g_menu = $('#header'); //The header div
