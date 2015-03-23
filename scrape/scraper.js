@@ -2,7 +2,7 @@
     This file contains a Scraper with an EventEmitter. It
     creates a Scrape prototype which has it's own url and
     info about a medium.
-*/
+**/
 
 var http         = require('http');
 var request      = require('request');
@@ -14,8 +14,8 @@ var STATUS_CODES = http.STATUS_CODES;
 
 
 /*  
-    Scraper Constructor
-*/
+ *   Scraper Constructor
+ */
 function Scraper(url, medium) {
     this.url = url;
     this.medium = medium;
@@ -24,13 +24,13 @@ function Scraper(url, medium) {
 }
 
 /*
-    Make it an EventEmitter
-*/
+ *   Make it an EventEmitter
+ */
 util.inherits(Scraper, EventEmitter);
 
 /*
-    Initialize scraping
-*/
+ *   Initialize scraping
+ */
 Scraper.prototype.init = function () {
     var model;
     var self = this;
@@ -43,8 +43,8 @@ Scraper.prototype.init = function () {
 }
 
 /*
-    Loads webpage and puts together html data
-*/
+ *   Loads webpage and puts together html data
+ */
 Scraper.prototype.loadWebPage = function () {
     var self  = this;
     console.log('\n\nLoading: ' + this.url);
@@ -59,8 +59,8 @@ Scraper.prototype.loadWebPage = function () {
 };
 
 /*
-    Parse html and return an object
-*/
+ *   Parse html and return an object
+ */
 Scraper.prototype.parsePage = function (html) {
 
     var self   = this;
@@ -68,10 +68,9 @@ Scraper.prototype.parsePage = function (html) {
 
 
     /*
-        THIS IS VERY SLOW FOR SOME REASON - CHECK LATER
-        Special case scenario for visir.is
-        where a user is requested before fetching
-        data from the website.
+     *  Special case scenario for visir.is
+     *  where a user is requested before fetching
+     *  data from the website.
     */
     if (medium.name == "VISIR") {
         var encoding = 'iso-8859-1';
@@ -93,19 +92,22 @@ Scraper.prototype.parsePage = function (html) {
 
     getData(html);
 
+    /*
+     * Get data fromn article and handle each medium
+     */
     function getData(html) {
         var $ = cheerio.load(html);
 
-        //For each article we find data
+        //For each article we find, we gather data from the article
+        //and then save the results to mongodb.
         $(medium.article).each(function () {
             var data = $(this);
             var medium_name, headline1, headline2, image, href, time;
 
             if (medium.name == "RUV") {
 
-                //This blocks advertisements that
-                //creep in between news items
-                //from coming into our database
+                //This blocks advertisements, we don't want them
+                //in out database
                 if (data.find(medium.hreflink).attr('href') == undefined) {
                     return true;
                 }
@@ -185,17 +187,17 @@ Scraper.prototype.parsePage = function (html) {
         });
     }
 
-    //Bara til að hafa einhvern timestamp til að vinna með
-    //Væri lang best að geta sótt réttann tíma á fréttinni
-    //af vefsíðunni.
+    /*
+     *  Time article was fetched.
+     */
     function getTimeStamp() {
         return new Date();
     }
 
-    //Ber saman urlið á requestinu við groups objectið.
-    //flokkar þannig saman eins/svipað efni undir
-    //sama hatt.
-    //FEfni fær svo sjálfkrafa "annnad" tag ef ekkert passaði.
+    /*
+     * Compare the url to the groups below and add tags
+     * to the articles
+     */
     function getTags() {
         var tags = [];
         var groups = {

@@ -8,10 +8,14 @@ app.get("/", function (req, res) {
     res.sendfile('index.html')
 });
 
+/*
+ * Loads x many news from our mongo database
+ */
+ 
+ var g_skip = 0;
 app.get("/loadnews", function (req, res) {
-	var batch = 25;
-	var skip = 0;
-    Articles.find({medium: "VISIR"}).skip(skip).limit(batch)
+	var batch = 20;
+    Articles.find().skip(g_skip).limit(batch)
         .execQ()
     	.then(function (result) {
     		res.send(JSON.stringify(result));
@@ -20,6 +24,7 @@ app.get("/loadnews", function (req, res) {
     		console.log(err);
     	})
     	.done();
+        g_skip += batch;
 });
 
 

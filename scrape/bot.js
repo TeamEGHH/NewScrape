@@ -1,9 +1,9 @@
 var Model = require('./model');
 var Scraper = require('./scraper');
+var cron = require('cron');
 var mongoose = require('mongoose-q')();
 var Pages = [];
 var Medias = [];
-var dresl;
 
 /*
  * Initialize several media sites for scraping
@@ -87,11 +87,6 @@ function generateScrapeObjects() {
     };
 }
 
-var ScrapeObjects = generateScrapeObjects();
-
-Pages = ScrapeObjects.urls;
-Media = ScrapeObjects.medias;
-
 //The main process
 //Uses the urls we created earlier and sends request for each one,
 //This a recursive function that continues until all urls in the
@@ -143,10 +138,17 @@ function wizard() {
     });
 }
 
+var cronJob = cron.job("0 */2 * * * *", function(){
+    //Lets kick things off
+    var ScrapeObjects = generateScrapeObjects();
 
-//Lets kick things off
-for (var i = 0; i < 5; i++) {
-    wizard();
-}
+    Pages = ScrapeObjects.urls;
+    Media = ScrapeObjects.medias;
+    for (var i = 0; i < 5; i++) {
+        wizard();
+    }    
+    console.info('cron job completed');
+}); 
+cronJob.start();
 
 module.exports = Scraper;

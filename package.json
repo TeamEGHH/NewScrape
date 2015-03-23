@@ -16,6 +16,7 @@
     "iconv-lite"		     : "latest",
     "jquery"             : "latest",
     "mongoose-q"         : "latest",
-    "util"               : "latest"
+    "util"               : "latest",
+    "cron"               : "latest"
   }
 }

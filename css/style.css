@@ -1,0 +1,68 @@
+body {
+    background: #e8e8e8;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+}
+
+.brick {
+    background: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    border-radius: 3px;
+    color: #333;
+    border: none;
+}
+
+.brick .img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background: rgba(231, 231, 231, 0.43);
+}
+
+.free-wall {
+    margin: 15px;
+}
+
+.brick {
+    width: 275px;
+}
+
+.info {
+    padding: 15px;
+    color: #333;
+}
+
+.brick img {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+#header-img img {
+    max-height: 10em;
+    height: auto;
+    margin: 2em;
+}
+
+.image-header-scroll {
+    margin-bottom: 5em;
+}
+
+#header {
+    height: 5em;
+    color: red;
+    transition: background-color .3s ease;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #101010;
+    opacity: .98;
+    transition: all .5s ease;
+    margin-bottom: 5em;
+}

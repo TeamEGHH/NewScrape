@@ -1,129 +1,79 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
+﻿<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>FréttaVeitan - Allt það helsta í fréttum í dag</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/templatemo_style.css">
-    <link rel="stylesheet" href="css/templatemo_misc.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/testimonails-slider.css">
-    <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    <title>fv.is</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="description" content="Íslenskar fréttir" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+    <script type="text/javascript" src="js/vendors/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/vendors/handlebars-v3.0.0.js"></script>
+    <script type="text/javascript" src="js/vendors/freewall.js"></script>
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
-    <div class="container-fluid">
-        <div id="latest-blog">
+    <div class="image-header text-center" id="header-img">
+        <img src="images/FINAL.gif">
+    </div>
+    <div id="header">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="heading-section">
-                        <h2>Latest news</h2>
-                        <img src="images/div-line.png" alt="">
-                    </div>
+                <div class="col-xs-2 text-center">
+                    <h3>Filter</h3>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <h3>Filter</h3>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <h3>Filter</h3>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <h3>Filter</h3>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <h3>Filter</h3>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <h3>Dropdown</h3>
                 </div>
             </div>
-            <div class="row article-display">
-                <script type="text/x-handlebars-template" id="row_template">
-                    {{#each this}}
-                    <div class="col-md-4 col-sm-6">
-                        <div class="blog-post">
-                            <div class="blog-thumb">
-                                <img src="{{this.image}}" alt="{{this.headline1}}" />
-                            </div>
-                            <div class="blog-content">
-                                <div class="content-show">
-                                    <h4><a href="{{this.href}}"> {{this.headline1}} </a></h4>
-                                    <span> {{this.time}} </span>
-                                </div>
-                                <div class="content-hide">
-                                    <p> {{this.headline2}} </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {{/each}}
-            </div>
-            </script>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="top-footer">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="social-bottom">
-                            <span>Follow us:</span>
-                            <ul>
-                                <li>
-                                    <a href="#" class="fa fa-facebook"></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fa fa-twitter"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+
+
+    <div id="freewall" class="free-wall">
+        <script type="text/x-handlebars-template" id="row_template">
+            {{#each this}}
+            <div class="brick">
+                <img src="{{this.image}}" width="100%" alt="{{this.headline1}}">
+                <div class="info">
+                    <h3>{{this.headline1}}</h3>
+                    <h5>{{this.headline2}}</h5>
                 </div>
             </div>
-            <div class="main-footer">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="about">
-                            <h4 class="footer-title">Um FréttaVeituna</h4>
-                            <p>FréttaVeitan býður notendum upp á að fylgjast með öllu því helsta sem er að gerast í heiminum á einum stað. Þessu náum við fram með því að sækja fréttir frá helstu vefmiðlum landsins og birta hér á okkar hátt.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="shop-list">
-                            <h4 class="footer-title">Vef miðlar</h4>
-                            <ul>
-                                <li><a href="https://www.dv.is"><i class="fa fa-angle-right"></i>DV</a></li>
-                                <li><a href="https://www.mbl.is"><i class="fa fa-angle-right"></i>Mbl</a></li>
-                                <li><a href="https://www.nutiminn.is"><i class="fa fa-angle-right"></i>Nútiminn</a></li>
-                                <li><a href="https://www.ruv.is"><i class="fa fa-angle-right"></i>RÚV</a></li>
-                                <li><a href="https://www.visir.is"><i class="fa fa-angle-right"></i>Vísir</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="more-info">
-                            <h4 class="footer-title">Eigendur</h4>
-                            <p>Vefsíðan var unnin sem hluti af lokaverkefni við Háskóla Íslands vorið 2015</p>
-                            <ul>
-                                <li><i class="fa fa-envelope"></i><a href="#">Egill Ingólfsson</a></li>
-                                <li><i class="fa fa-envelope"></i><a href="#">Guðni Þór Björnsson</a></li>
-                                <li><i class="fa fa-envelope"></i><a href="#">Hjörtur Larsen Þórðarson</a></li>
-                                <li><i class="fa fa-envelope"></i><a href="#">Hrólfur Hjörleifsson</a></li>
-                                <li><i class="fa fa-globe"></i>Reykjavík Iceland</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom-footer">
-                <p>Copyright © 2015</p>
-            </div>
-        </div>
-    </footer>
-    <script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/vendor/jquery.gmap3.min.js"></script>
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/handlebars-v3.0.0.js"></script>
-    <script type="text/javascript" src="js/dataload.js"></script>
+            {{/each}}
+        </script>
+
+
+        <script type="text/javascript">
+        var wall = new freewall("#freewall");
+        wall.reset({
+            selector: '.brick',
+            animate: true,
+            cellW: 300,
+            cellH: 'auto',
+            onResize: function() {
+                wall.fitWidth();
+            }
+        });
+
+        wall.container.find('.brick img').load(function() {
+            wall.fitWidth();
+        });
+        </script>
+        <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
