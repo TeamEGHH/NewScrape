@@ -27,6 +27,26 @@ app.get("/loadnews", function (req, res) {
         g_skip += batch;
 });
 
+app.get("/article/:id", function(req, res) {
+    var newsframe;
+    Articles.findOne({
+            '_id': req.params.id
+        }, function(err, article) {
+            if (err) {
+                return err;
+            }
+            if (!article) {
+                console.log('Article not found');
+            } else {
+                console.log('found article');
+                console.log(article.href);
+                newsframe = article.href;
+                res.send('<iframe src="' + newsframe + '" height="100%" width="100%">')
+            }
+        });
+});
+
+
 
 /* serves all the static files */
 app.get(/^(.+)$/, function (req, res) {
