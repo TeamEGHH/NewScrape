@@ -37,16 +37,19 @@ $(document).ready(function() {
      * Writes data to html using Handlebars.js
      */
     function writeHTML(data) {
-            var source = $("#row_template").html();
-            var template = Handlebars.compile(source);
-            $("#freewall").append(template(data));
-            return $.ajax();
+        for (var i=0; i<data.length; i++) {
+            data[i].time = moment(data[i].time).fromNow();
         }
-        /*
-         * Helper function for fetch_and_display:
-         * jQuery effects, ran after all the html data
-         * has been loaded.
-         */
+        var source = $("#row_template").html();
+        var template = Handlebars.compile(source);
+        $("#freewall").append(template(data));
+        return $.ajax();
+    }
+    /*
+     * Helper function for fetch_and_display:
+     * jQuery effects, ran after all the html data
+     * has been loaded.
+     */
     function htmlEffects(data) {
         g_wall.container.find('.brick img').load(function() {
             g_wall.fitWidth();

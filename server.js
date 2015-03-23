@@ -15,7 +15,7 @@ app.get("/", function (req, res) {
  var g_skip = 0;
 app.get("/loadnews", function (req, res) {
 	var batch = 20;
-    Articles.find().skip(g_skip).limit(batch)
+    Articles.find().sort({time: -1}).skip(g_skip).limit(batch)
         .execQ()
     	.then(function (result) {
     		res.send(JSON.stringify(result));

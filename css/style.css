@@ -29,6 +29,75 @@ body {
     width: 275px;
 }
 
+.brick .medium-and-time img {
+    display: inline;
+    padding-bottom: 0.5em;
+}
+
+.media-icons {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.medium-and-time.VISIR{
+  position:absolute;
+  width: 100%;
+  background-color: rgba(111, 138, 242, 0.8);
+  color:white;
+  padding-left:1em;
+  padding-top:0.2em;
+  font-size:14px;
+  z-index:5;
+}
+
+.medium-and-time.MBL{
+  position:absolute;
+  width: 100%;
+  background-color: rgba(0, 4, 255, 0.8);
+  color:white;
+  padding-left:1em;
+  padding-top:0.2em;
+  font-size:14px;
+  z-index:5;
+}
+
+.medium-and-time.RUV{
+  position:absolute;
+  width: 100%;
+  background-color: rgba(0, 51, 255, 0.8);
+  color:white;
+  padding-left:1em;
+  padding-top:0.2em;
+  font-size:14px;
+  z-index:5;
+}
+
+.medium-and-time.NUTIMINN{
+  position:absolute;
+  width: 100%;
+  background-color: rgba(255, 77, 0, 0.8);
+  color:white;
+  padding-left:1em;
+  padding-top:0.2em;
+  font-size:14px;
+  z-index:5;
+}
+
+.medium-and-time.DV{
+  position:absolute;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.8);
+  color:white;
+  padding-left:1em;
+  padding-top:0.2em;
+  font-size:14px;
+  z-index:5;
+}
+
+.medium-and-time a {
+  color: white;
+}
+
 .info {
     padding: 15px;
     color: #333;

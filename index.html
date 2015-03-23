@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/vendors/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/vendors/handlebars-v3.0.0.js"></script>
     <script type="text/javascript" src="js/vendors/freewall.js"></script>
+    <script src="js/vendor/moment.min.js"></script>
 </head>
 
 <body>
@@ -47,6 +48,9 @@
         <script type="text/x-handlebars-template" id="row_template">
             {{#each this}}
             <div class="brick">
+                <div class="medium-and-time {{this.medium}}">
+                    <a><img class="media-icons" src='media_icons/{{this.medium}}.gif'/> {{this.time}}</a>
+                </div>
                 <img src="{{this.image}}" width="100%" alt="{{this.headline1}}">
                 <div class="info">
                     <h3>{{this.headline1}}</h3>
