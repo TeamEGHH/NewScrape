@@ -20,23 +20,46 @@
     <div id="header">
         <div class="container">
             <div class="row">
-                <div class="col-xs-2 text-center">
-                    <h3>Filter</h3>
+                <div class="filter-medium col-sm-offset-1 col-xs-2 text-center">
+                    <h3>DV</h3>
                 </div>
-                <div class="col-xs-2 text-center">
-                    <h3>Filter</h3>
+                <div class="filter-medium col-xs-2 text-center">
+                    <h3>MBL</h3>
                 </div>
-                <div class="col-xs-2 text-center">
-                    <h3>Filter</h3>
+                <div class="filter-medium col-xs-2 text-center">
+                    <h3>Nútíminn</h3>
                 </div>
-                <div class="col-xs-2 text-center">
-                    <h3>Filter</h3>
+                <div class="filter-medium col-xs-2 text-center">
+                    <h3>RÚV</h3>
                 </div>
-                <div class="col-xs-2 text-center">
-                    <h3>Filter</h3>
+                <div class="filter-medium col-xs-2 text-center">
+                    <h3>Vísir</h3>
                 </div>
-                <div class="col-xs-2 text-center">
-                    <h3>Dropdown</h3>
+            </div>
+            <div class="row">
+            	<div class="col-sm-offset-2 filter-tag col-xs-1 text-center">
+                    <h4>Innlent</h4>
+                </div>
+                <div class="filter-tag col-xs-1 text-center">
+                    <h4>Erlent</h4>
+                </div>
+                <div class="filter-tag col-xs-1 text-center">
+                    <h4>Sport</h4>
+                </div>
+                <div class="filter-tag col-xs-1 text-center">
+                    <h4>Pólitík</h4>
+                </div>
+                <div class="filter-tag col-xs-1 text-center">
+                    <h4>Tækni</h4>
+                </div>
+                <div class="filter-tag col-xs-1 text-center">
+                    <h4>Viðskipti</h4>
+                </div>
+                <div class="filter-tag col-xs-1 text-center">
+                    <h4>Músík</h4>
+                </div>
+                <div class="filter-tag col-xs-1 text-center">
+                    <h4>Fólk</h4>
                 </div>
             </div>
         </div>
@@ -44,38 +67,42 @@
     <div id="freewall" class="free-wall">
         <script type="text/x-handlebars-template" id="row_template">
             {{#each this}}
-            <a href="/article/{{this._id}}">
-                <div class="brick">
-                    <div>
-                        <div class="medium-and-time {{this.medium}}">
-                            <img class="media-icons" src='images/{{this.medium}}.gif' /> {{this.time}}
-                        </div>
-                        <img src="{{this.image}}" width="100%" alt="{{this.headline1}}">
-                    </div>
-                    <div class="info">
-                        <h3>{{this.headline1}}</h3>
-                        <div class="hide-show">
-                            <h5>{{this.headline2}}</h5>
-                        </div>
-                    </div>
-                </div>
-            </a>
+	            <a href="/article/{{this._id}}">
+	                <div class="brick">
+	                    <div>
+	                        <div class="medium-and-time {{this.medium}}">
+	                            <img class="media-icons" src='images/{{this.medium}}.gif' /> {{this.time}}
+	                        </div>
+	                        <img src="{{this.image}}" width="100%" alt="{{this.headline1}}">
+	                    </div>
+	                    <div class="info">
+	                        <h3>{{this.headline1}}</h3>
+	                        <div class="hide-show">
+	                            <h5>{{this.headline2}}</h5>
+	                        </div>
+	                    </div>
+	                </div>
+	            </a>
             {{/each}}
         </script>
-        <script type="text/javascript">
-        var g_wall = new freewall("#freewall");
-        g_wall.reset({
-            selector: '.brick',
-            animate: true,
-            cellW: 300,
-            cellH: 'auto',
-            onResize: function() {
-                g_wall.fitWidth();
-            }
-        });
 
-        g_wall.container.find('.brick img').load(function() {
-            g_wall.fitWidth();
+        <script type="text/javascript">
+        var g_wall;
+        $(function() {
+            g_wall = new freewall("#freewall");
+            g_wall.reset({
+                selector: '.brick',
+                animate: true,
+                cellW: 300,
+                cellH: 'auto',
+                onResize: function() {
+                    g_wall.fitWidth();
+                }
+            });
+
+            g_wall.container.find('.brick img').load(function() {
+                g_wall.fitWidth();
+            });
         });
         </script>
         <script type="text/javascript" src="js/main.js"></script>

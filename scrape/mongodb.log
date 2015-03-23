@@ -3253,3 +3253,144 @@ Raunveruleikastjarnan virðist ekki geta haldið sig í fötunum
 2015-03-23T19:58:26.596+0000 [consoleTerminate] removeJournalFiles
 2015-03-23T19:58:26.597+0000 [consoleTerminate] shutdown: removing fs lock...
 2015-03-23T19:58:26.598+0000 [consoleTerminate] dbexit: really exiting now
+2015-03-23T20:26:49.902+0000 ***** SERVER RESTARTED *****
+2015-03-23T20:26:49.911+0000 [initandlisten] MongoDB starting : pid=6020 port=27017 dbpath=C:/Users/Hjortur/Desktop/NewScrape/data 64-bit host=Hjortur-PC
+2015-03-23T20:26:49.911+0000 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-03-23T20:26:49.911+0000 [initandlisten] db version v2.6.7
+2015-03-23T20:26:49.911+0000 [initandlisten] git version: a7d57ad27c382de82e9cb93bf983a80fd9ac9899
+2015-03-23T20:26:49.911+0000 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-03-23T20:26:49.911+0000 [initandlisten] allocator: system
+2015-03-23T20:26:49.911+0000 [initandlisten] options: { config: "mongodb.conf", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "C:/Users/Hjortur/Desktop/NewScrape/data", directoryPerDB: true, journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/Users/Hjortur/Desktop/NewScrape/scrape/mongodb.log" } }
+2015-03-23T20:26:49.947+0000 [initandlisten] journal dir=C:/Users/Hjortur/Desktop/NewScrape/data\journal
+2015-03-23T20:26:49.947+0000 [initandlisten] recover : no journal files present, no recovery needed
+2015-03-23T20:26:49.997+0000 [initandlisten] allocating new ns file C:/Users/Hjortur/Desktop/NewScrape/data\local\local.ns, filling with zeroes...
+2015-03-23T20:26:50.239+0000 [FileAllocator] allocating new datafile C:/Users/Hjortur/Desktop/NewScrape/data\local\local.0, filling with zeroes...
+2015-03-23T20:26:50.241+0000 [FileAllocator] done allocating datafile C:/Users/Hjortur/Desktop/NewScrape/data\local\local.0, size: 64MB,  took 0 secs
+2015-03-23T20:26:50.243+0000 [initandlisten] build index on: local.startup_log properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }
+2015-03-23T20:26:50.243+0000 [initandlisten] 	 added index to empty collection
+2015-03-23T20:26:50.243+0000 [initandlisten] command local.$cmd command: create { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0 numYields:0  reslen:37 245ms
+2015-03-23T20:26:50.243+0000 [initandlisten] waiting for connections on port 27017
+2015-03-23T20:26:52.449+0000 [initandlisten] connection accepted from 127.0.0.1:56411 #1 (1 connection now open)
+2015-03-23T20:27:47.568+0000 [initandlisten] connection accepted from 127.0.0.1:56489 #2 (2 connections now open)
+2015-03-23T20:27:47.569+0000 [initandlisten] connection accepted from 127.0.0.1:56490 #3 (3 connections now open)
+2015-03-23T20:27:47.570+0000 [initandlisten] connection accepted from 127.0.0.1:56491 #4 (4 connections now open)
+2015-03-23T20:27:47.571+0000 [initandlisten] connection accepted from 127.0.0.1:56492 #5 (5 connections now open)
+2015-03-23T20:27:47.571+0000 [initandlisten] connection accepted from 127.0.0.1:56493 #6 (6 connections now open)
+2015-03-23T20:27:50.000+0000 [clientcursormon] mem (MB) res:54 virt:465
+2015-03-23T20:27:50.000+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T20:27:50.000+0000 [clientcursormon]  connections:6
+2015-03-23T20:32:50.125+0000 [clientcursormon] mem (MB) res:39 virt:463
+2015-03-23T20:32:50.125+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T20:32:50.125+0000 [clientcursormon]  connections:6
+2015-03-23T20:36:56.417+0000 [initandlisten] connection accepted from 127.0.0.1:56882 #7 (7 connections now open)
+2015-03-23T20:36:56.417+0000 [initandlisten] connection accepted from 127.0.0.1:56883 #8 (8 connections now open)
+2015-03-23T20:36:56.417+0000 [initandlisten] connection accepted from 127.0.0.1:56884 #9 (9 connections now open)
+2015-03-23T20:36:56.432+0000 [initandlisten] connection accepted from 127.0.0.1:56885 #10 (10 connections now open)
+2015-03-23T20:36:56.432+0000 [initandlisten] connection accepted from 127.0.0.1:56886 #11 (11 connections now open)
+2015-03-23T20:37:50.403+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T20:37:50.403+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T20:37:50.403+0000 [clientcursormon]  connections:11
+2015-03-23T20:42:51.000+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-23T20:42:51.000+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T20:42:51.000+0000 [clientcursormon]  connections:11
+2015-03-23T20:47:51.462+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T20:47:51.462+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T20:47:51.462+0000 [clientcursormon]  connections:11
+2015-03-23T20:52:51.911+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-23T20:52:51.911+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T20:52:51.911+0000 [clientcursormon]  connections:11
+2015-03-23T20:57:52.466+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-23T20:57:52.466+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T20:57:52.466+0000 [clientcursormon]  connections:11
+2015-03-23T20:59:20.250+0000 [conn7] end connection 127.0.0.1:56882 (10 connections now open)
+2015-03-23T20:59:20.250+0000 [conn8] end connection 127.0.0.1:56883 (9 connections now open)
+2015-03-23T20:59:20.250+0000 [conn9] end connection 127.0.0.1:56884 (8 connections now open)
+2015-03-23T20:59:20.250+0000 [conn10] end connection 127.0.0.1:56885 (7 connections now open)
+2015-03-23T20:59:20.250+0000 [conn11] end connection 127.0.0.1:56886 (6 connections now open)
+2015-03-23T20:59:21.631+0000 [initandlisten] connection accepted from 127.0.0.1:58200 #12 (7 connections now open)
+2015-03-23T20:59:21.631+0000 [initandlisten] connection accepted from 127.0.0.1:58201 #13 (8 connections now open)
+2015-03-23T20:59:21.631+0000 [initandlisten] connection accepted from 127.0.0.1:58202 #14 (9 connections now open)
+2015-03-23T20:59:21.631+0000 [initandlisten] connection accepted from 127.0.0.1:58203 #15 (10 connections now open)
+2015-03-23T20:59:21.631+0000 [initandlisten] connection accepted from 127.0.0.1:58204 #16 (11 connections now open)
+2015-03-23T21:02:52.938+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:02:52.938+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:02:52.938+0000 [clientcursormon]  connections:11
+2015-03-23T21:07:53.559+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:07:53.559+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:07:53.559+0000 [clientcursormon]  connections:11
+2015-03-23T21:12:54.098+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:12:54.098+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:12:54.098+0000 [clientcursormon]  connections:11
+2015-03-23T21:17:54.645+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:17:54.645+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:17:54.645+0000 [clientcursormon]  connections:11
+2015-03-23T21:22:55.235+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:22:55.235+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:22:55.235+0000 [clientcursormon]  connections:11
+2015-03-23T21:27:22.852+0000 [conn12] end connection 127.0.0.1:58200 (10 connections now open)
+2015-03-23T21:27:22.852+0000 [conn13] end connection 127.0.0.1:58201 (10 connections now open)
+2015-03-23T21:27:22.852+0000 [conn15] end connection 127.0.0.1:58203 (8 connections now open)
+2015-03-23T21:27:22.852+0000 [conn16] end connection 127.0.0.1:58204 (8 connections now open)
+2015-03-23T21:27:22.852+0000 [conn14] end connection 127.0.0.1:58202 (8 connections now open)
+2015-03-23T21:27:24.171+0000 [initandlisten] connection accepted from 127.0.0.1:59673 #17 (7 connections now open)
+2015-03-23T21:27:24.171+0000 [initandlisten] connection accepted from 127.0.0.1:59674 #18 (8 connections now open)
+2015-03-23T21:27:24.175+0000 [initandlisten] connection accepted from 127.0.0.1:59675 #19 (9 connections now open)
+2015-03-23T21:27:24.176+0000 [initandlisten] connection accepted from 127.0.0.1:59676 #20 (10 connections now open)
+2015-03-23T21:27:24.176+0000 [initandlisten] connection accepted from 127.0.0.1:59677 #21 (11 connections now open)
+2015-03-23T21:27:55.717+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:27:55.717+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:27:55.717+0000 [clientcursormon]  connections:11
+2015-03-23T21:32:56.208+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:32:56.208+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:32:56.208+0000 [clientcursormon]  connections:11
+2015-03-23T21:37:16.831+0000 [conn17] end connection 127.0.0.1:59673 (10 connections now open)
+2015-03-23T21:37:16.831+0000 [conn18] end connection 127.0.0.1:59674 (10 connections now open)
+2015-03-23T21:37:16.831+0000 [conn19] end connection 127.0.0.1:59675 (8 connections now open)
+2015-03-23T21:37:16.831+0000 [conn20] end connection 127.0.0.1:59676 (7 connections now open)
+2015-03-23T21:37:16.831+0000 [conn21] end connection 127.0.0.1:59677 (7 connections now open)
+2015-03-23T21:37:18.660+0000 [initandlisten] connection accepted from 127.0.0.1:60153 #22 (7 connections now open)
+2015-03-23T21:37:18.660+0000 [initandlisten] connection accepted from 127.0.0.1:60154 #23 (8 connections now open)
+2015-03-23T21:37:18.660+0000 [initandlisten] connection accepted from 127.0.0.1:60155 #24 (9 connections now open)
+2015-03-23T21:37:18.660+0000 [initandlisten] connection accepted from 127.0.0.1:60156 #25 (10 connections now open)
+2015-03-23T21:37:18.660+0000 [initandlisten] connection accepted from 127.0.0.1:60157 #26 (11 connections now open)
+2015-03-23T21:37:56.811+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:37:56.811+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:37:56.811+0000 [clientcursormon]  connections:11
+2015-03-23T21:42:57.272+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:42:57.272+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:42:57.272+0000 [clientcursormon]  connections:11
+2015-03-23T21:47:57.520+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:47:57.520+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:47:57.520+0000 [clientcursormon]  connections:11
+2015-03-23T21:52:57.734+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-03-23T21:52:57.734+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:52:57.734+0000 [clientcursormon]  connections:11
+2015-03-23T21:57:57.785+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T21:57:57.785+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T21:57:57.785+0000 [clientcursormon]  connections:11
+2015-03-23T22:00:02.576+0000 [conn5] insert test.articles query: { medium: "VISIR", headline1: "Leiðtogi Svíþjóðardemókrata snýr aftur", headline2: "Jimmie Åkesson fór í veikindaleyfi að loknum þingkosningum í september þar sem hann sagðist vera útbrunninn í starfi.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329665/AR/0/AR-150329665.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/leidtogi-svithjodardemokrata-snyr-aftur/article/2015150329665", time: new Date(1427148002429), _id: ObjectId('55108ce2f3da1e74076b2f13'), tags: [ "erlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Leiðtogi Svíþjóðardemókrata snýr aftur" } code:11000 numYields:0 locks(micros) w:116 122ms
+2015-03-23T22:00:02.576+0000 [conn6] insert test.articles query: { medium: "VISIR", headline1: "Netanyahu búinn að mynda meirihluta", headline2: "67 af 120 þingmönnum á ísraelska þinginu styðja nýja samsteypustjórn Benjamin Netanyahu forsætisráðherra.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329650/AR/0/AR-150329650.jpg&MaxW=649&imageversion=Frettalistar", href: "http://www.visir.is/section/netanyahu-buinn-ad-mynda-meirihluta/article/2015150329650", time: new Date(1427148002428), _id: ObjectId('55108ce2f3da1e74076b2f11'), tags: [ "erlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Netanyahu búinn að mynda meirihluta" } code:11000 numYields:0 locks(micros) w:139 123ms
+2015-03-23T22:00:02.576+0000 [conn3] insert test.articles query: { medium: "VISIR", headline1: "Sænskri fegurðardrottningu haldið nauðugri á Ítalíu í hálft ár", headline2: "Ítalskur karlmaður hefur verið handtekinn fyrir að hafa haldið 23 ára sænskri konu fanginni í íbúð norður af borginni Mílanó síðan í ...", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329658/AR/0/AR-150329658.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/saenskri-fegurdardrottningu-haldid-naudugri-a-italiu-i-halft-ar/article/2015150329658", time: new Date(1427148002429), _id: ObjectId('55108ce2f3da1e74076b2f12'), tags: [ "erlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Sænskri fegurðardrottningu haldið nauðugri á Ítalíu í hálft ár" } code:11000 numYields:0 locks(micros) w:120 122ms
+2015-03-23T22:00:02.576+0000 [conn2] insert test.articles query: { medium: "VISIR", headline1: "Leiðtogar þriggja Afríkuríkja semja um Nílarfljót", headline2: "Samningnum er ætlað að binda endi á langvinna deilu um hvernig skipta beri Nílarfljóti og byggingu stærstu stíflu álfunnar í Eþíópíu.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329671/AR/0/AR-150329671.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/leidtogar-thriggja-afrikurikja-semja-um-nilarfljot/article/2015150329671", time: new Date(1427148002430), _id: ObjectId('55108ce2f3da1e74076b2f14'), tags: [ "erlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Leiðtogar þriggja Afríkuríkja semja um Nílarfljót" } code:11000 numYields:0 locks(micros) w:96 122ms
+2015-03-23T22:00:02.576+0000 [conn4] insert test.articles query: { medium: "VISIR", headline1: "Lögreglustjórar reknir í Túnisborg", headline2: "Öryggisverðir við inngang Bardo-safnsins voru í kaffipásu þegar árásarmennirnir hófu skothríðina.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329687/AR/0/AR-150329687.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/logreglustjorar-reknir-i-tunisborg/article/2015150329687", time: new Date(1427148002430), _id: ObjectId('55108ce2f3da1e74076b2f15'), tags: [ "erlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Lögreglustjórar reknir í Túnisborg" } code:11000 numYields:0 locks(micros) w:115 121ms
+2015-03-23T22:00:02.576+0000 [conn2] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Leiðtogar þriggja Afríkuríkja semja um Nílarfljót", headline2: "Samningnum er ætlað að binda endi á langvinna deilu um hvernig skipta beri Nílarfljóti og byggingu stærstu stíflu álfunnar í Eþíópíu.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329671/AR/0/AR-150329671.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/leidtogar-thriggja-afrikurikja-semja-um-nilarfljot/article/2015150329671", time: new Date(1427148002430), _id: ObjectId('55108ce2f3da1e74076b2f14'), tags: [ "erlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:271 122ms
+2015-03-23T22:00:02.576+0000 [conn6] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Netanyahu búinn að mynda meirihluta", headline2: "67 af 120 þingmönnum á ísraelska þinginu styðja nýja samsteypustjórn Benjamin Netanyahu forsætisráðherra.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329650/AR/0/AR-150329650.jpg&MaxW=649&imageversion=Frettalistar", href: "http://www.visir.is/section/netanyahu-buinn-ad-mynda-meirihluta/article/2015150329650", time: new Date(1427148002428), _id: ObjectId('55108ce2f3da1e74076b2f11'), tags: [ "erlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:253 123ms
+2015-03-23T22:00:02.576+0000 [conn3] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Sænskri fegurðardrottningu haldið nauðugri á Ítalíu í hálft ár", headline2: "Ítalskur karlmaður hefur verið handtekinn fyrir að hafa haldið 23 ára sænskri konu fanginni í íbúð norður af borginni Mílanó síðan í ...", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329658/AR/0/AR-150329658.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/saenskri-fegurdardrottningu-haldid-naudugri-a-italiu-i-halft-ar/article/2015150329658", time: new Date(1427148002429), _id: ObjectId('55108ce2f3da1e74076b2f12'), tags: [ "erlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:288 123ms
+2015-03-23T22:00:02.576+0000 [conn5] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Leiðtogi Svíþjóðardemókrata snýr aftur", headline2: "Jimmie Åkesson fór í veikindaleyfi að loknum þingkosningum í september þar sem hann sagðist vera útbrunninn í starfi.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329665/AR/0/AR-150329665.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/leidtogi-svithjodardemokrata-snyr-aftur/article/2015150329665", time: new Date(1427148002429), _id: ObjectId('55108ce2f3da1e74076b2f13'), tags: [ "erlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:261 122ms
+2015-03-23T22:00:02.576+0000 [conn4] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Lögreglustjórar reknir í Túnisborg", headline2: "Öryggisverðir við inngang Bardo-safnsins voru í kaffipásu þegar árásarmennirnir hófu skothríðina.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR02/150329687/AR/0/AR-150329687.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/logreglustjorar-reknir-i-tunisborg/article/2015150329687", time: new Date(1427148002430), _id: ObjectId('55108ce2f3da1e74076b2f15'), tags: [ "erlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:254 121ms
+2015-03-23T22:02:57.950+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T22:02:57.950+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T22:02:57.950+0000 [clientcursormon]  connections:11
+2015-03-23T22:05:22.068+0000 [conn22] end connection 127.0.0.1:60153 (10 connections now open)
+2015-03-23T22:05:22.069+0000 [conn23] end connection 127.0.0.1:60154 (9 connections now open)
+2015-03-23T22:05:22.069+0000 [conn25] end connection 127.0.0.1:60156 (9 connections now open)
+2015-03-23T22:05:22.069+0000 [conn24] end connection 127.0.0.1:60155 (9 connections now open)
+2015-03-23T22:05:22.070+0000 [conn26] end connection 127.0.0.1:60157 (7 connections now open)
+2015-03-23T22:05:23.298+0000 [initandlisten] connection accepted from 127.0.0.1:61679 #27 (7 connections now open)
+2015-03-23T22:05:23.298+0000 [initandlisten] connection accepted from 127.0.0.1:61680 #28 (8 connections now open)
+2015-03-23T22:05:23.298+0000 [initandlisten] connection accepted from 127.0.0.1:61681 #29 (9 connections now open)
+2015-03-23T22:05:23.298+0000 [initandlisten] connection accepted from 127.0.0.1:61682 #30 (10 connections now open)
+2015-03-23T22:05:23.298+0000 [initandlisten] connection accepted from 127.0.0.1:61683 #31 (11 connections now open)
+2015-03-23T22:07:58.358+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T22:07:58.358+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T22:07:58.358+0000 [clientcursormon]  connections:11

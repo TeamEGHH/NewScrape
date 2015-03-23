@@ -1,6 +1,7 @@
 body {
     background: #e8e8e8;
     font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size: 12px;
 }
 
 .brick {
@@ -100,22 +101,23 @@ body {
 }
 
 .image-header-scroll {
-    margin-bottom: 5em;
+    margin-bottom: 7em;
 }
 
 #header {
-    height: 5em;
     color: red;
     transition: background-color .3s ease;
 }
 
 .header-container {
+	transition: all 3s ease;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    background-color: #101010;
+    background-color: #202020;
     opacity: .98;
-    transition: all .5s ease;
     margin-bottom: 5em;
+    font-size: 0.75rem;
+    font-color: red;
 }
