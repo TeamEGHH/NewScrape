@@ -3569,3 +3569,31 @@ Raunveruleikastjarnan virðist ekki geta haldið sig í fötunum
 2015-03-24T18:08:32.879+0000 [clientcursormon] mem (MB) res:39 virt:469
 2015-03-24T18:08:32.879+0000 [clientcursormon]  mapped (incl journal view):320
 2015-03-24T18:08:32.879+0000 [clientcursormon]  connections:11
+2015-03-24T18:09:52.490+0000 CTRL_CLOSE_EVENT signal
+2015-03-24T18:09:52.490+0000 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-03-24T18:09:52.490+0000 [consoleTerminate] now exiting
+2015-03-24T18:09:52.505+0000 [conn3] end connection 127.0.0.1:55076 (10 connections now open)
+2015-03-24T18:09:52.505+0000 [conn4] end connection 127.0.0.1:55077 (10 connections now open)
+2015-03-24T18:09:52.505+0000 [conn2] end connection 127.0.0.1:55075 (8 connections now open)
+2015-03-24T18:09:52.505+0000 [conn6] end connection 127.0.0.1:55079 (8 connections now open)
+2015-03-24T18:09:52.505+0000 [conn5] end connection 127.0.0.1:55078 (8 connections now open)
+2015-03-24T18:09:52.505+0000 [conn1] end connection 127.0.0.1:55074 (5 connections now open)
+2015-03-24T18:09:52.505+0000 [conn27] end connection 127.0.0.1:56541 (4 connections now open)
+2015-03-24T18:09:52.505+0000 [conn28] end connection 127.0.0.1:56542 (3 connections now open)
+2015-03-24T18:09:52.505+0000 [conn29] end connection 127.0.0.1:56543 (2 connections now open)
+2015-03-24T18:09:52.505+0000 [conn30] end connection 127.0.0.1:56544 (1 connection now open)
+2015-03-24T18:09:52.505+0000 [conn31] end connection 127.0.0.1:56545 (0 connections now open)
+2015-03-24T18:09:52.505+0000 [consoleTerminate] dbexit: 
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: going to close listening sockets...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] closing listening socket: 504
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: going to flush diaglog...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: going to close sockets...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: lock for final commit...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: final commit...
+2015-03-24T18:09:52.521+0000 [consoleTerminate] shutdown: closing all files...
+2015-03-24T18:09:52.521+0000 [consoleTerminate] closeAllFiles() finished
+2015-03-24T18:09:52.521+0000 [consoleTerminate] journalCleanup...
+2015-03-24T18:09:52.536+0000 [consoleTerminate] removeJournalFiles
+2015-03-24T18:09:52.536+0000 [consoleTerminate] shutdown: removing fs lock...
+2015-03-24T18:09:52.536+0000 [consoleTerminate] dbexit: really exiting now
