@@ -1,10 +1,16 @@
-/*
- * Global variables. Marked with _g wich indicates that it
- * is a global variable.
- */
-var g_menu, g_menu_pos, g_image_header;
+$(function() {
+    var wall = new freewall("#freewall");
 
-$(document).ready(function() {
+    wall.reset({
+        selector: '.brick',
+        animate: true,
+        cellW: 300,
+        cellH: 'auto',
+        onResize: function() {
+            wall.fitWidth();
+        }
+    });
+
     /*
      * Fetch data from mongodb and append the data
      * to index.html
@@ -12,12 +18,9 @@ $(document).ready(function() {
     function fetch_and_display() {
         $.get("/loadnews", function(data) {
             var json = $.parseJSON(data);
-            start:
-                success:
-                writeHTML(json).done(function() {
-
-                    htmlEffects(json);
-                });
+            success: writeHTML(json).done(function() {
+                afterHTMLLoad(json);
+            });
         });
     }
 
@@ -32,7 +35,7 @@ $(document).ready(function() {
         }
         var source = $("#row_template").html();
         var template = Handlebars.compile(source);
-        $("#freewall").append(template(data));
+        $('#freewall').append(template(data));
         return $.ajax();
     }
 
@@ -41,13 +44,9 @@ $(document).ready(function() {
      * jQuery effects, ran after all the html data
      * has been loaded.
      */
-    function htmlEffects(data) {
-        g_menu = $('#header'); //The header div
-        g_menu_pos = g_menu.offset(); //The position of the header div
-        g_image_header = $('.image-header');
-
-        g_wall.container.find('.brick img').load(function() {
-            g_wall.fitWidth();
+    function afterHTMLLoad(data) {
+        wall.container.find('.brick img').load(function() {
+            wall.fitWidth();
         });
 
         //This is done to avoid prevoius odd behaviour of the medium-and-time class
@@ -56,47 +55,61 @@ $(document).ready(function() {
     }
 
     /*
-     * Listens for desired events
+     * Global variables. Marked with _g wich indicates that it
+     * is a global variable.
      */
-    function listener() {
-        //Listen for scroll
-        $(window).scroll(function() {
-            //Load more data if we hit the bottom of the page
-            function dataLoad() {
-                if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-                    fetch_and_display();
+    var g_menu, g_menu_pos, g_image_header;
+
+    g_menu = $('#header'); //The header div
+    g_menu_pos = g_menu.offset(); //The position of the header div
+    g_image_header = $('.image-header');
+
+    $(document).ready(function() {
+        /*
+         * Listens for desired events
+         */
+        function listener() {
+            //Listen for scroll
+            $(window).scroll(function() {
+                //Load more data if we hit the bottom of the page
+                function dataLoad() {
+                    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+                        fetch_and_display();
+                    }
                 }
-            }
 
-            //Make header fixed to top while scrolling
-            function headerScroll() {
-                if ($(this).scrollTop() >= g_menu_pos.top) {
-                    g_menu.addClass('header-container', 2000, 'easeInBack');
-                    g_image_header.addClass('image-header-scroll', 2000, 'easeInBack');
-                } else if ($(this).scrollTop() <= g_menu_pos.top) {
-                    g_menu.removeClass('header-container', 2000, 'easeInBack');
-                    g_image_header.removeClass('image-header-scroll', 2000, "easeInBack");
+                //Make header fixed to top while scrolling
+                function headerScroll() {
+                    if ($(this).scrollTop() >= g_menu_pos.top) {
+                        g_menu.addClass('header-container', 2000, 'easeInBack');
+                        g_image_header.addClass('image-header-scroll', 2000, 'easeInBack');
+                    } else if ($(this).scrollTop() <= g_menu_pos.top) {
+                        g_menu.removeClass('header-container', 2000, 'easeInBack');
+                        g_image_header.removeClass('image-header-scroll', 2000, "easeInBack");
+                    }
                 }
-            }
-            dataLoad();
-            headerScroll();
-        });
+                dataLoad();
+                headerScroll();
+            });
 
-        $(window).resize(function() {
-            g_menu = $('#header'); //The header div
-            g_menu_pos = g_menu.offset(); //The position of the header div
-            g_image_header = $('.image-header');
-        });
-    }
+            $(window).resize(function() {
+                g_menu = $('#header'); //The header div
+                g_menu_pos = g_menu.offset(); //The position of the header div
+                g_image_header = $('.image-header');
+            });
+        }
 
-    /*
-     * Main function to keep track of function calling
-     */
-    function main() {
-        fetch_and_display();
-        listener();
-    }
+        /*
+         * Main function to keep track of function calling
+         */
+        function main() {
+            fetch_and_display();
+            listener();
+        }
 
-    //Kick things off
-    main();
+        //Kick things off
+        main();
+    });
+
+    $(window).trigger('resize');
 });

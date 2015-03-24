@@ -3394,3 +3394,206 @@ Raunveruleikastjarnan virðist ekki geta haldið sig í fötunum
 2015-03-23T22:07:58.358+0000 [clientcursormon] mem (MB) res:40 virt:469
 2015-03-23T22:07:58.358+0000 [clientcursormon]  mapped (incl journal view):320
 2015-03-23T22:07:58.358+0000 [clientcursormon]  connections:11
+2015-03-23T22:12:58.510+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-23T22:12:58.510+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-23T22:12:58.510+0000 [clientcursormon]  connections:11
+2015-03-23T22:14:23.784+0000 [conn4] end connection 127.0.0.1:56491 (10 connections now open)
+2015-03-23T22:14:23.784+0000 [conn3] end connection 127.0.0.1:56490 (9 connections now open)
+2015-03-23T22:14:23.784+0000 [conn2] end connection 127.0.0.1:56489 (8 connections now open)
+2015-03-23T22:14:23.784+0000 [conn5] end connection 127.0.0.1:56492 (7 connections now open)
+2015-03-23T22:14:23.784+0000 [conn6] end connection 127.0.0.1:56493 (6 connections now open)
+2015-03-23T22:14:24.613+0000 [conn27] end connection 127.0.0.1:61679 (5 connections now open)
+2015-03-23T22:14:24.613+0000 [conn28] end connection 127.0.0.1:61680 (5 connections now open)
+2015-03-23T22:14:24.613+0000 [conn30] end connection 127.0.0.1:61682 (4 connections now open)
+2015-03-23T22:14:24.613+0000 [conn29] end connection 127.0.0.1:61681 (4 connections now open)
+2015-03-23T22:14:24.613+0000 [conn31] end connection 127.0.0.1:61683 (1 connection now open)
+2015-03-23T22:14:28.092+0000 [conn1] end connection 127.0.0.1:56411 (0 connections now open)
+2015-03-23T22:14:28.514+0000 CTRL_CLOSE_EVENT signal
+2015-03-23T22:14:28.514+0000 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-03-23T22:14:28.514+0000 [consoleTerminate] now exiting
+2015-03-23T22:14:28.514+0000 [consoleTerminate] dbexit: 
+2015-03-23T22:14:28.514+0000 [consoleTerminate] shutdown: going to close listening sockets...
+2015-03-23T22:14:28.514+0000 [consoleTerminate] closing listening socket: 500
+2015-03-23T22:14:28.514+0000 [consoleTerminate] shutdown: going to flush diaglog...
+2015-03-23T22:14:28.514+0000 [consoleTerminate] shutdown: going to close sockets...
+2015-03-23T22:14:28.514+0000 [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-03-23T22:14:28.514+0000 [consoleTerminate] shutdown: lock for final commit...
+2015-03-23T22:14:28.514+0000 [consoleTerminate] shutdown: final commit...
+2015-03-23T22:14:28.545+0000 [consoleTerminate] shutdown: closing all files...
+2015-03-23T22:14:28.545+0000 [consoleTerminate] closeAllFiles() finished
+2015-03-23T22:14:28.545+0000 [consoleTerminate] journalCleanup...
+2015-03-23T22:14:28.561+0000 [consoleTerminate] removeJournalFiles
+2015-03-23T22:14:28.577+0000 [consoleTerminate] shutdown: removing fs lock...
+2015-03-23T22:14:28.577+0000 [consoleTerminate] dbexit: really exiting now
+2015-03-24T16:12:23.521+0000 ***** SERVER RESTARTED *****
+2015-03-24T16:12:23.533+0000 [initandlisten] MongoDB starting : pid=6760 port=27017 dbpath=C:/Users/Hjortur/Desktop/NewScrape/data 64-bit host=Hjortur-PC
+2015-03-24T16:12:23.533+0000 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-03-24T16:12:23.533+0000 [initandlisten] db version v2.6.7
+2015-03-24T16:12:23.533+0000 [initandlisten] git version: a7d57ad27c382de82e9cb93bf983a80fd9ac9899
+2015-03-24T16:12:23.533+0000 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-03-24T16:12:23.533+0000 [initandlisten] allocator: system
+2015-03-24T16:12:23.533+0000 [initandlisten] options: { config: "mongodb.conf", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "C:/Users/Hjortur/Desktop/NewScrape/data", directoryPerDB: true, journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/Users/Hjortur/Desktop/NewScrape/scrape/mongodb.log" } }
+2015-03-24T16:12:23.568+0000 [initandlisten] journal dir=C:/Users/Hjortur/Desktop/NewScrape/data\journal
+2015-03-24T16:12:23.568+0000 [initandlisten] recover : no journal files present, no recovery needed
+2015-03-24T16:12:23.659+0000 [initandlisten] waiting for connections on port 27017
+2015-03-24T16:12:29.716+0000 [initandlisten] connection accepted from 127.0.0.1:55074 #1 (1 connection now open)
+2015-03-24T16:12:37.565+0000 [initandlisten] connection accepted from 127.0.0.1:55075 #2 (2 connections now open)
+2015-03-24T16:12:37.567+0000 [initandlisten] connection accepted from 127.0.0.1:55076 #3 (3 connections now open)
+2015-03-24T16:12:37.568+0000 [initandlisten] connection accepted from 127.0.0.1:55077 #4 (4 connections now open)
+2015-03-24T16:12:37.568+0000 [initandlisten] connection accepted from 127.0.0.1:55078 #5 (5 connections now open)
+2015-03-24T16:12:37.568+0000 [initandlisten] connection accepted from 127.0.0.1:55079 #6 (6 connections now open)
+2015-03-24T16:12:46.247+0000 [initandlisten] connection accepted from 127.0.0.1:55081 #7 (7 connections now open)
+2015-03-24T16:12:46.249+0000 [initandlisten] connection accepted from 127.0.0.1:55082 #8 (8 connections now open)
+2015-03-24T16:12:46.250+0000 [initandlisten] connection accepted from 127.0.0.1:55083 #9 (9 connections now open)
+2015-03-24T16:12:46.251+0000 [initandlisten] connection accepted from 127.0.0.1:55084 #10 (10 connections now open)
+2015-03-24T16:12:46.251+0000 [initandlisten] connection accepted from 127.0.0.1:55085 #11 (11 connections now open)
+2015-03-24T16:13:23.653+0000 [clientcursormon] mem (MB) res:54 virt:471
+2015-03-24T16:13:23.653+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:13:23.653+0000 [clientcursormon]  connections:11
+2015-03-24T16:18:21.724+0000 [conn5] insert test.articles query: { medium: "VISIR", headline1: "Bíll valt og annar lenti á lögreglubifreið", headline2: "Mikil ísing var á veginum", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329679/AR/0/AR-150329679.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/bill-valt-og-annar-lenti-a-logreglubifreid/article/2015150329679", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a662'), tags: [ "innlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Bíll valt og annar lenti á lögreglubifreið" } code:11000 numYields:0 locks(micros) w:104 334ms
+2015-03-24T16:18:21.724+0000 [conn5] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Bíll valt og annar lenti á lögreglubifreið", headline2: "Mikil ísing var á veginum", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329679/AR/0/AR-150329679.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/bill-valt-og-annar-lenti-a-logreglubifreid/article/2015150329679", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a662'), tags: [ "innlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:262 334ms
+2015-03-24T16:18:21.724+0000 [conn2] insert test.articles query: { medium: "VISIR", headline1: "Vegfarendur lyftu bíl af tveggja barna móður á Garðskagavegi", headline2: "Magnað afrek.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329680/AR/0/AR-150329680.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/vegfarendur-lyftu-bil-af-tveggja-barna-modur-a-gardskagavegi/article/2015150329680", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a663'), tags: [ "innlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Vegfarendur lyftu bíl af tveggja barna móður á Garðskagavegi" } code:11000 numYields:0 locks(micros) w:82 339ms
+2015-03-24T16:18:21.724+0000 [conn2] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Vegfarendur lyftu bíl af tveggja barna móður á Garðskagavegi", headline2: "Magnað afrek.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329680/AR/0/AR-150329680.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/vegfarendur-lyftu-bil-af-tveggja-barna-modur-a-gardskagavegi/article/2015150329680", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a663'), tags: [ "innlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:281 339ms
+2015-03-24T16:18:21.740+0000 [conn4] insert test.articles query: { medium: "VISIR", headline1: "Íslendingar sem flón á alþjóðavettvangi", headline2: "Sænskur fræðimaður hæðist að bréfi Gunnars Braga og líkir framgöngu Íslands við sápuóperu.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329681/AR/0/AR-150329681.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/islendingar-sem-flon-a-althjodavettvangi/article/2015150329681", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a664'), tags: [ "innlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Íslendingar sem flón á alþjóðavettvangi" } code:11000 numYields:0 locks(micros) w:109 343ms
+2015-03-24T16:18:21.740+0000 [conn4] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Íslendingar sem flón á alþjóðavettvangi", headline2: "Sænskur fræðimaður hæðist að bréfi Gunnars Braga og líkir framgöngu Íslands við sápuóperu.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329681/AR/0/AR-150329681.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/islendingar-sem-flon-a-althjodavettvangi/article/2015150329681", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a664'), tags: [ "innlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:261 343ms
+2015-03-24T16:18:21.740+0000 [conn6] insert test.articles query: { medium: "VISIR", headline1: "Segja hvalveiðar hafa lítil áhrif á samskipti ríkjanna", headline2: " Fyrrverandi sendiherra Íslands í Bandaríkjunum og formaður utanríkisnefndar eru sammála um að afstaða Bandaríkjamanna til hvalveiða og pól...", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329682/AR/0/AR-150329682.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/segja-hvalveidar-hafa-litil-ahrif-a-samskipti-rikjanna/article/2015150329682", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a665'), tags: [ "innlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Segja hvalveiðar hafa lítil áhrif á samskipti ríkjanna" } code:11000 numYields:0 locks(micros) w:69 347ms
+2015-03-24T16:18:21.740+0000 [conn6] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Segja hvalveiðar hafa lítil áhrif á samskipti ríkjanna", headline2: " Fyrrverandi sendiherra Íslands í Bandaríkjunum og formaður utanríkisnefndar eru sammála um að afstaða Bandaríkjamanna til hvalveiða og pól...", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329682/AR/0/AR-150329682.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/segja-hvalveidar-hafa-litil-ahrif-a-samskipti-rikjanna/article/2015150329682", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a665'), tags: [ "innlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:275 347ms
+2015-03-24T16:18:21.740+0000 [conn3] insert test.articles query: { medium: "VISIR", headline1: "Segir leikskólastjóra hafa sakað sig um mannréttindabrot", headline2: "Símtöl frá leikskólastjórum særðu mest en ferðaþjónustuaðilar voru einnig ósáttir við Sævar Helga Bragason.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329696/AR/0/AR-150329696.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/segir-leikskolastjora-hafa-sakad-sig-um-mannrettindabrot/article/2015150329696", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a666'), tags: [ "innlent" ], __v: 0 } ninserted:0 keyUpdates:0 exception: insertDocument :: caused by :: 11000 E11000 duplicate key error index: test.articles.$headline1_1  dup key: { : "Segir leikskólastjóra hafa sakað sig um mannréttindabrot" } code:11000 numYields:0 locks(micros) w:83 351ms
+2015-03-24T16:18:21.740+0000 [conn3] command test.$cmd command: insert { insert: "articles", writeConcern: { w: 1 }, ordered: true, documents: [ { medium: "VISIR", headline1: "Segir leikskólastjóra hafa sakað sig um mannréttindabrot", headline2: "Símtöl frá leikskólastjórum særðu mest en ferðaþjónustuaðilar voru einnig ósáttir við Sævar Helga Bragason.", image: "http://img.visir.is/apps/pbcsi.dll/storyimage/XZ/20150323/FRETTIR01/150329696/AR/0/AR-150329696.jpg&MaxW=320&imageversion=Frettalistar", href: "http://www.visir.is/section/segir-leikskolastjora-hafa-sakad-sig-um-mannrettindabrot/article/2015150329696", time: new Date(1427213901339), _id: ObjectId('55118e4dc72b10981943a666'), tags: [ "innlent" ], __v: 0 } ] } keyUpdates:0 numYields:0  reslen:276 351ms
+2015-03-24T16:18:23.957+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T16:18:23.957+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:18:23.957+0000 [clientcursormon]  connections:11
+2015-03-24T16:23:24.162+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T16:23:24.162+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:23:24.162+0000 [clientcursormon]  connections:11
+2015-03-24T16:28:24.233+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T16:28:24.233+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:28:24.233+0000 [clientcursormon]  connections:11
+2015-03-24T16:32:52.612+0000 [conn11] end connection 127.0.0.1:55085 (10 connections now open)
+2015-03-24T16:32:52.612+0000 [conn7] end connection 127.0.0.1:55081 (10 connections now open)
+2015-03-24T16:32:52.612+0000 [conn10] end connection 127.0.0.1:55084 (10 connections now open)
+2015-03-24T16:32:52.612+0000 [conn8] end connection 127.0.0.1:55082 (10 connections now open)
+2015-03-24T16:32:52.612+0000 [conn9] end connection 127.0.0.1:55083 (10 connections now open)
+2015-03-24T16:32:53.847+0000 [initandlisten] connection accepted from 127.0.0.1:56179 #12 (7 connections now open)
+2015-03-24T16:32:53.847+0000 [initandlisten] connection accepted from 127.0.0.1:56180 #13 (8 connections now open)
+2015-03-24T16:32:53.847+0000 [initandlisten] connection accepted from 127.0.0.1:56181 #14 (9 connections now open)
+2015-03-24T16:32:53.847+0000 [initandlisten] connection accepted from 127.0.0.1:56182 #15 (10 connections now open)
+2015-03-24T16:32:53.847+0000 [initandlisten] connection accepted from 127.0.0.1:56183 #16 (11 connections now open)
+2015-03-24T16:33:24.722+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T16:33:24.722+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:33:24.722+0000 [clientcursormon]  connections:11
+2015-03-24T16:38:25.159+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T16:38:25.159+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:38:25.159+0000 [clientcursormon]  connections:11
+2015-03-24T16:42:49.956+0000 [conn12] end connection 127.0.0.1:56179 (10 connections now open)
+2015-03-24T16:42:49.956+0000 [conn14] end connection 127.0.0.1:56181 (10 connections now open)
+2015-03-24T16:42:49.956+0000 [conn13] end connection 127.0.0.1:56180 (10 connections now open)
+2015-03-24T16:42:49.956+0000 [conn15] end connection 127.0.0.1:56182 (8 connections now open)
+2015-03-24T16:42:49.956+0000 [conn16] end connection 127.0.0.1:56183 (6 connections now open)
+2015-03-24T16:42:51.424+0000 [initandlisten] connection accepted from 127.0.0.1:56594 #17 (7 connections now open)
+2015-03-24T16:42:51.424+0000 [initandlisten] connection accepted from 127.0.0.1:56595 #18 (8 connections now open)
+2015-03-24T16:42:51.424+0000 [initandlisten] connection accepted from 127.0.0.1:56596 #19 (9 connections now open)
+2015-03-24T16:42:51.424+0000 [initandlisten] connection accepted from 127.0.0.1:56597 #20 (10 connections now open)
+2015-03-24T16:42:51.424+0000 [initandlisten] connection accepted from 127.0.0.1:56598 #21 (11 connections now open)
+2015-03-24T16:43:25.491+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-03-24T16:43:25.491+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:43:25.491+0000 [clientcursormon]  connections:11
+2015-03-24T16:48:25.869+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T16:48:25.869+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:48:25.869+0000 [clientcursormon]  connections:11
+2015-03-24T16:53:26.132+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-03-24T16:53:26.132+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:53:26.132+0000 [clientcursormon]  connections:11
+2015-03-24T16:58:26.363+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T16:58:26.363+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T16:58:26.363+0000 [clientcursormon]  connections:11
+2015-03-24T17:03:26.831+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T17:03:26.831+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:03:26.831+0000 [clientcursormon]  connections:11
+2015-03-24T17:08:26.982+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-03-24T17:08:26.982+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:08:26.982+0000 [clientcursormon]  connections:11
+2015-03-24T17:13:27.232+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-03-24T17:13:27.232+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:13:27.232+0000 [clientcursormon]  connections:11
+2015-03-24T17:18:27.734+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T17:18:27.734+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:18:27.734+0000 [clientcursormon]  connections:11
+2015-03-24T17:23:28.216+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T17:23:28.216+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:23:28.216+0000 [clientcursormon]  connections:11
+2015-03-24T17:28:28.686+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T17:28:28.686+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:28:28.686+0000 [clientcursormon]  connections:11
+2015-03-24T17:31:52.880+0000 [conn17] end connection 127.0.0.1:56594 (10 connections now open)
+2015-03-24T17:31:52.880+0000 [conn18] end connection 127.0.0.1:56595 (9 connections now open)
+2015-03-24T17:31:52.880+0000 [conn19] end connection 127.0.0.1:56596 (8 connections now open)
+2015-03-24T17:31:52.880+0000 [conn20] end connection 127.0.0.1:56597 (7 connections now open)
+2015-03-24T17:31:52.880+0000 [conn21] end connection 127.0.0.1:56598 (6 connections now open)
+2015-03-24T17:31:54.119+0000 [initandlisten] connection accepted from 127.0.0.1:56191 #22 (7 connections now open)
+2015-03-24T17:31:54.119+0000 [initandlisten] connection accepted from 127.0.0.1:56192 #23 (8 connections now open)
+2015-03-24T17:31:54.119+0000 [initandlisten] connection accepted from 127.0.0.1:56193 #24 (9 connections now open)
+2015-03-24T17:31:54.119+0000 [initandlisten] connection accepted from 127.0.0.1:56194 #25 (10 connections now open)
+2015-03-24T17:31:54.119+0000 [initandlisten] connection accepted from 127.0.0.1:56195 #26 (11 connections now open)
+2015-03-24T17:33:29.261+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T17:33:29.261+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:33:29.261+0000 [clientcursormon]  connections:11
+2015-03-24T17:38:26.952+0000 [conn22] end connection 127.0.0.1:56191 (10 connections now open)
+2015-03-24T17:38:26.952+0000 [conn23] end connection 127.0.0.1:56192 (9 connections now open)
+2015-03-24T17:38:26.952+0000 [conn24] end connection 127.0.0.1:56193 (8 connections now open)
+2015-03-24T17:38:26.952+0000 [conn25] end connection 127.0.0.1:56194 (7 connections now open)
+2015-03-24T17:38:26.952+0000 [conn26] end connection 127.0.0.1:56195 (6 connections now open)
+2015-03-24T17:38:28.031+0000 [initandlisten] connection accepted from 127.0.0.1:56541 #27 (7 connections now open)
+2015-03-24T17:38:28.031+0000 [initandlisten] connection accepted from 127.0.0.1:56542 #28 (8 connections now open)
+2015-03-24T17:38:28.031+0000 [initandlisten] connection accepted from 127.0.0.1:56543 #29 (9 connections now open)
+2015-03-24T17:38:28.031+0000 [initandlisten] connection accepted from 127.0.0.1:56544 #30 (10 connections now open)
+2015-03-24T17:38:28.031+0000 [initandlisten] connection accepted from 127.0.0.1:56545 #31 (11 connections now open)
+2015-03-24T17:38:29.858+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-03-24T17:38:29.858+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:38:29.858+0000 [clientcursormon]  connections:11
+2015-03-24T17:43:30.440+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-03-24T17:43:30.440+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:43:30.440+0000 [clientcursormon]  connections:11
+2015-03-24T17:48:30.782+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T17:48:30.782+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:48:30.782+0000 [clientcursormon]  connections:11
+2015-03-24T17:53:31.238+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T17:53:31.238+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:53:31.238+0000 [clientcursormon]  connections:11
+2015-03-24T17:58:31.826+0000 [clientcursormon] mem (MB) res:40 virt:469
+2015-03-24T17:58:31.826+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T17:58:31.826+0000 [clientcursormon]  connections:11
+2015-03-24T18:03:32.329+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-24T18:03:32.329+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T18:03:32.329+0000 [clientcursormon]  connections:11
+2015-03-24T18:08:32.879+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-24T18:08:32.879+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T18:08:32.879+0000 [clientcursormon]  connections:11
+2015-03-24T18:09:52.490+0000 CTRL_CLOSE_EVENT signal
+2015-03-24T18:09:52.490+0000 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-03-24T18:09:52.490+0000 [consoleTerminate] now exiting
+2015-03-24T18:09:52.505+0000 [conn3] end connection 127.0.0.1:55076 (10 connections now open)
+2015-03-24T18:09:52.505+0000 [conn4] end connection 127.0.0.1:55077 (10 connections now open)
+2015-03-24T18:09:52.505+0000 [conn2] end connection 127.0.0.1:55075 (8 connections now open)
+2015-03-24T18:09:52.505+0000 [conn6] end connection 127.0.0.1:55079 (8 connections now open)
+2015-03-24T18:09:52.505+0000 [conn5] end connection 127.0.0.1:55078 (8 connections now open)
+2015-03-24T18:09:52.505+0000 [conn1] end connection 127.0.0.1:55074 (5 connections now open)
+2015-03-24T18:09:52.505+0000 [conn27] end connection 127.0.0.1:56541 (4 connections now open)
+2015-03-24T18:09:52.505+0000 [conn28] end connection 127.0.0.1:56542 (3 connections now open)
+2015-03-24T18:09:52.505+0000 [conn29] end connection 127.0.0.1:56543 (2 connections now open)
+2015-03-24T18:09:52.505+0000 [conn30] end connection 127.0.0.1:56544 (1 connection now open)
+2015-03-24T18:09:52.505+0000 [conn31] end connection 127.0.0.1:56545 (0 connections now open)
+2015-03-24T18:09:52.505+0000 [consoleTerminate] dbexit: 
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: going to close listening sockets...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] closing listening socket: 504
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: going to flush diaglog...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: going to close sockets...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: lock for final commit...
+2015-03-24T18:09:52.505+0000 [consoleTerminate] shutdown: final commit...
+2015-03-24T18:09:52.521+0000 [consoleTerminate] shutdown: closing all files...
+2015-03-24T18:09:52.521+0000 [consoleTerminate] closeAllFiles() finished
+2015-03-24T18:09:52.521+0000 [consoleTerminate] journalCleanup...
+2015-03-24T18:09:52.536+0000 [consoleTerminate] removeJournalFiles
+2015-03-24T18:09:52.536+0000 [consoleTerminate] shutdown: removing fs lock...
+2015-03-24T18:09:52.536+0000 [consoleTerminate] dbexit: really exiting now
