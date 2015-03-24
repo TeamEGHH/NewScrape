@@ -19,7 +19,7 @@ $(function() {
         $.get("/loadnews", function(data) {
             var json = $.parseJSON(data);
             success: writeHTML(json).done(function() {
-                afterHTMLLoad(json);
+                afterHTMLLoad();
             });
         });
     }
@@ -44,7 +44,7 @@ $(function() {
      * jQuery effects, ran after all the html data
      * has been loaded.
      */
-    function afterHTMLLoad(data) {
+    function afterHTMLLoad() {
         wall.container.find('.brick img').load(function() {
             wall.fitWidth();
         });
@@ -52,6 +52,8 @@ $(function() {
         //This is done to avoid prevoius odd behaviour of the medium-and-time class
         //positioning. So we add the position after everything has been loaded.
         $('.medium-and-time').addClass('medium-and-time-pos');
+
+        $(window).trigger('resize');
     }
 
     /*

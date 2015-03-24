@@ -3597,3 +3597,87 @@ Raunveruleikastjarnan virðist ekki geta haldið sig í fötunum
 2015-03-24T18:09:52.536+0000 [consoleTerminate] removeJournalFiles
 2015-03-24T18:09:52.536+0000 [consoleTerminate] shutdown: removing fs lock...
 2015-03-24T18:09:52.536+0000 [consoleTerminate] dbexit: really exiting now
+2015-03-24T18:51:01.781+0000 ***** SERVER RESTARTED *****
+2015-03-24T18:51:01.781+0000 [initandlisten] MongoDB starting : pid=4800 port=27017 dbpath=C:/Users/Hjortur/Desktop/NewScrape/data 64-bit host=Hjortur-PC
+2015-03-24T18:51:01.781+0000 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-03-24T18:51:01.781+0000 [initandlisten] db version v2.6.7
+2015-03-24T18:51:01.781+0000 [initandlisten] git version: a7d57ad27c382de82e9cb93bf983a80fd9ac9899
+2015-03-24T18:51:01.781+0000 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-03-24T18:51:01.781+0000 [initandlisten] allocator: system
+2015-03-24T18:51:01.781+0000 [initandlisten] options: { config: "mongodb.conf", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "C:/Users/Hjortur/Desktop/NewScrape/data", directoryPerDB: true, journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/Users/Hjortur/Desktop/NewScrape/scrape/mongodb.log" } }
+2015-03-24T18:51:01.828+0000 [initandlisten] journal dir=C:/Users/Hjortur/Desktop/NewScrape/data\journal
+2015-03-24T18:51:01.828+0000 [initandlisten] recover : no journal files present, no recovery needed
+2015-03-24T18:51:01.906+0000 [initandlisten] waiting for connections on port 27017
+2015-03-24T18:51:29.070+0000 [initandlisten] connection accepted from 127.0.0.1:49550 #1 (1 connection now open)
+2015-03-24T18:51:41.733+0000 [initandlisten] connection accepted from 127.0.0.1:49556 #2 (2 connections now open)
+2015-03-24T18:51:41.749+0000 [initandlisten] connection accepted from 127.0.0.1:49557 #3 (3 connections now open)
+2015-03-24T18:51:41.749+0000 [initandlisten] connection accepted from 127.0.0.1:49558 #4 (4 connections now open)
+2015-03-24T18:51:41.749+0000 [initandlisten] connection accepted from 127.0.0.1:49559 #5 (5 connections now open)
+2015-03-24T18:51:41.749+0000 [initandlisten] connection accepted from 127.0.0.1:49560 #6 (6 connections now open)
+2015-03-24T18:51:54.891+0000 [initandlisten] connection accepted from 127.0.0.1:49562 #7 (7 connections now open)
+2015-03-24T18:51:54.891+0000 [initandlisten] connection accepted from 127.0.0.1:49563 #8 (8 connections now open)
+2015-03-24T18:51:54.891+0000 [initandlisten] connection accepted from 127.0.0.1:49564 #9 (9 connections now open)
+2015-03-24T18:51:54.891+0000 [initandlisten] connection accepted from 127.0.0.1:49565 #10 (10 connections now open)
+2015-03-24T18:51:54.891+0000 [initandlisten] connection accepted from 127.0.0.1:49566 #11 (11 connections now open)
+2015-03-24T18:52:01.988+0000 [clientcursormon] mem (MB) res:39 virt:471
+2015-03-24T18:52:01.988+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T18:52:01.988+0000 [clientcursormon]  connections:11
+2015-03-24T18:52:54.854+0000 [conn7] end connection 127.0.0.1:49562 (10 connections now open)
+2015-03-24T18:52:54.854+0000 [conn8] end connection 127.0.0.1:49563 (9 connections now open)
+2015-03-24T18:52:54.854+0000 [conn9] end connection 127.0.0.1:49564 (8 connections now open)
+2015-03-24T18:52:54.854+0000 [conn10] end connection 127.0.0.1:49565 (7 connections now open)
+2015-03-24T18:52:54.854+0000 [conn11] end connection 127.0.0.1:49566 (6 connections now open)
+2015-03-24T18:52:56.151+0000 [initandlisten] connection accepted from 127.0.0.1:49650 #12 (7 connections now open)
+2015-03-24T18:52:56.151+0000 [initandlisten] connection accepted from 127.0.0.1:49651 #13 (8 connections now open)
+2015-03-24T18:52:56.151+0000 [initandlisten] connection accepted from 127.0.0.1:49652 #14 (9 connections now open)
+2015-03-24T18:52:56.151+0000 [initandlisten] connection accepted from 127.0.0.1:49653 #15 (10 connections now open)
+2015-03-24T18:52:56.151+0000 [initandlisten] connection accepted from 127.0.0.1:49654 #16 (11 connections now open)
+2015-03-24T18:57:02.469+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-24T18:57:02.469+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T18:57:02.469+0000 [clientcursormon]  connections:11
+2015-03-24T19:02:02.642+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-24T19:02:02.642+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T19:02:02.642+0000 [clientcursormon]  connections:11
+2015-03-24T19:07:02.696+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-24T19:07:02.696+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T19:07:02.696+0000 [clientcursormon]  connections:11
+2015-03-24T19:12:02.768+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-24T19:12:02.768+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T19:12:02.768+0000 [clientcursormon]  connections:11
+2015-03-24T19:17:02.817+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-24T19:17:02.817+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T19:17:02.817+0000 [clientcursormon]  connections:11
+2015-03-24T19:22:02.883+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-24T19:22:02.883+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T19:22:02.883+0000 [clientcursormon]  connections:11
+2015-03-24T19:27:03.039+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-03-24T19:27:03.039+0000 [clientcursormon]  mapped (incl journal view):320
+2015-03-24T19:27:03.039+0000 [clientcursormon]  connections:11
+2015-03-24T19:30:18.921+0000 CTRL_CLOSE_EVENT signal
+2015-03-24T19:30:18.921+0000 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-03-24T19:30:18.921+0000 [consoleTerminate] now exiting
+2015-03-24T19:30:18.921+0000 [conn12] end connection 127.0.0.1:49650 (10 connections now open)
+2015-03-24T19:30:18.921+0000 [conn13] end connection 127.0.0.1:49651 (9 connections now open)
+2015-03-24T19:30:18.921+0000 [conn14] end connection 127.0.0.1:49652 (9 connections now open)
+2015-03-24T19:30:18.921+0000 [conn15] end connection 127.0.0.1:49653 (7 connections now open)
+2015-03-24T19:30:18.921+0000 [conn16] end connection 127.0.0.1:49654 (6 connections now open)
+2015-03-24T19:30:18.921+0000 [conn2] end connection 127.0.0.1:49556 (5 connections now open)
+2015-03-24T19:30:18.921+0000 [conn3] end connection 127.0.0.1:49557 (4 connections now open)
+2015-03-24T19:30:18.921+0000 [conn6] end connection 127.0.0.1:49560 (3 connections now open)
+2015-03-24T19:30:18.921+0000 [conn4] end connection 127.0.0.1:49558 (2 connections now open)
+2015-03-24T19:30:18.921+0000 [conn5] end connection 127.0.0.1:49559 (1 connection now open)
+2015-03-24T19:30:18.937+0000 [conn1] end connection 127.0.0.1:49550 (0 connections now open)
+2015-03-24T19:30:18.952+0000 [consoleTerminate] dbexit: 
+2015-03-24T19:30:18.952+0000 [consoleTerminate] shutdown: going to close listening sockets...
+2015-03-24T19:30:18.952+0000 [consoleTerminate] closing listening socket: 464
+2015-03-24T19:30:18.952+0000 [consoleTerminate] shutdown: going to flush diaglog...
+2015-03-24T19:30:18.952+0000 [consoleTerminate] shutdown: going to close sockets...
+2015-03-24T19:30:18.952+0000 [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-03-24T19:30:18.952+0000 [consoleTerminate] shutdown: lock for final commit...
+2015-03-24T19:30:18.952+0000 [consoleTerminate] shutdown: final commit...
+2015-03-24T19:30:19.015+0000 [consoleTerminate] shutdown: closing all files...
+2015-03-24T19:30:19.015+0000 [consoleTerminate] closeAllFiles() finished
+2015-03-24T19:30:19.015+0000 [consoleTerminate] journalCleanup...
+2015-03-24T19:30:19.363+0000 [consoleTerminate] removeJournalFiles
+2015-03-24T19:30:19.365+0000 [consoleTerminate] shutdown: removing fs lock...
+2015-03-24T19:30:19.365+0000 [consoleTerminate] dbexit: really exiting now
