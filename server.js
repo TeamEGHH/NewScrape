@@ -14,7 +14,7 @@ app.get("/", function (req, res) {
  * Loads x many news from our mongo database
  */
 app.get("/loadnews", function (req, res) {
-	var batch = 20;
+	var batch = 10;
     Articles.find().sort({time: -1}).skip(g_skip).limit(batch)
         .execQ()
     	.then(function (result) {

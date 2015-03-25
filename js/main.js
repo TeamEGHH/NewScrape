@@ -4,13 +4,12 @@ $(function() {
     wall.reset({
         selector: '.brick',
         animate: true,
-        cellW: 300,
+        cellW: 350,
         cellH: 'auto',
         onResize: function() {
             wall.fitWidth();
         }
     });
-
     /*
      * Fetch data from mongodb and append the data
      * to index.html
@@ -35,7 +34,10 @@ $(function() {
         }
         var source = $("#row_template").html();
         var template = Handlebars.compile(source);
-        $('#freewall').append(template(data));
+        $.each(data, function(index, item) {
+            wall.appendBlock(template(item));
+            wall.fitWidth();
+        });
         return $.ajax();
     }
 
@@ -48,6 +50,9 @@ $(function() {
         wall.container.find('.brick img').load(function() {
             wall.fitWidth();
         });
+
+        
+        g_menu_pos = g_menu.offset(); //The position of the header div
 
         //This is done to avoid prevoius odd behaviour of the medium-and-time class
         //positioning. So we add the position after everything has been loaded.
@@ -62,11 +67,10 @@ $(function() {
      */
     var g_menu, g_menu_pos, g_image_header;
 
-    g_menu = $('#header'); //The header div
-    g_menu_pos = g_menu.offset(); //The position of the header div
-    g_image_header = $('.image-header');
-
     $(document).ready(function() {
+        g_menu = $('#header'); //The header div
+        g_image_header = $('.image-header');
+
         /*
          * Listens for desired events
          */
