@@ -30,19 +30,14 @@ $(function() {
         if (!skip) {
             $.get("/loadnews0", function(data) {
                 var json = $.parseJSON(data);
-                success: writeHTML(json).done(function() {
-                    afterHTMLLoad(json);
-                    skip = true;
-                });
+                success: writeHTML(json);
+                skip = true;
             });
-        }
-        else{
+        } else {
             $.get("/loadnews20", function(data) {
                 var json = $.parseJSON(data);
-                success: writeHTML(json).done(function() {
-                    afterHTMLLoad(json);
-                });
-            });    
+                success: writeHTML(json);
+            });
         }
     }
 

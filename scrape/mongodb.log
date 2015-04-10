@@ -4199,3 +4199,34 @@ Raunveruleikastjarnan virðist ekki geta haldið sig í fötunum
 2015-04-10T15:35:36.484+0000 [consoleTerminate] removeJournalFiles
 2015-04-10T15:35:36.484+0000 [consoleTerminate] shutdown: removing fs lock...
 2015-04-10T15:35:36.484+0000 [consoleTerminate] dbexit: really exiting now
+2015-04-10T15:43:20.273+0000 ***** SERVER RESTARTED *****
+2015-04-10T15:43:20.273+0000 [initandlisten] MongoDB starting : pid=8840 port=27017 dbpath=C:/Users/91hjo_000/Desktop/NewScrape/data 64-bit host=Hjortur
+2015-04-10T15:43:20.273+0000 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-04-10T15:43:20.273+0000 [initandlisten] db version v2.6.7
+2015-04-10T15:43:20.273+0000 [initandlisten] git version: a7d57ad27c382de82e9cb93bf983a80fd9ac9899
+2015-04-10T15:43:20.273+0000 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-04-10T15:43:20.273+0000 [initandlisten] allocator: system
+2015-04-10T15:43:20.273+0000 [initandlisten] options: { config: "mongodb.conf", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "C:/Users/91hjo_000/Desktop/NewScrape/data", directoryPerDB: true, journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/Users/91hjo_000/Desktop/NewScrape/scrape/mongodb.log" } }
+2015-04-10T15:43:20.289+0000 [initandlisten] journal dir=C:/Users/91hjo_000/Desktop/NewScrape/data\journal
+2015-04-10T15:43:20.289+0000 [initandlisten] recover : no journal files present, no recovery needed
+2015-04-10T15:43:20.305+0000 [initandlisten] waiting for connections on port 27017
+2015-04-10T15:43:24.900+0000 [initandlisten] connection accepted from 127.0.0.1:54181 #1 (1 connection now open)
+2015-04-10T15:43:35.268+0000 [initandlisten] connection accepted from 127.0.0.1:54183 #2 (2 connections now open)
+2015-04-10T15:43:35.268+0000 [initandlisten] connection accepted from 127.0.0.1:54184 #3 (3 connections now open)
+2015-04-10T15:43:35.268+0000 [initandlisten] connection accepted from 127.0.0.1:54185 #4 (4 connections now open)
+2015-04-10T15:43:35.268+0000 [initandlisten] connection accepted from 127.0.0.1:54186 #5 (5 connections now open)
+2015-04-10T15:43:35.268+0000 [initandlisten] connection accepted from 127.0.0.1:54187 #6 (6 connections now open)
+2015-04-10T15:44:20.417+0000 [clientcursormon] mem (MB) res:39 virt:465
+2015-04-10T15:44:20.417+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-10T15:44:20.417+0000 [clientcursormon]  connections:6
+2015-04-10T16:26:32.668+0000 [clientcursormon] mem (MB) res:39 virt:463
+2015-04-10T16:26:32.668+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-10T16:26:32.668+0000 [clientcursormon]  connections:6
+2015-04-10T16:27:30.171+0000 [initandlisten] connection accepted from 127.0.0.1:54374 #7 (7 connections now open)
+2015-04-10T16:27:30.171+0000 [initandlisten] connection accepted from 127.0.0.1:54375 #8 (8 connections now open)
+2015-04-10T16:27:30.171+0000 [initandlisten] connection accepted from 127.0.0.1:54376 #9 (9 connections now open)
+2015-04-10T16:27:30.171+0000 [initandlisten] connection accepted from 127.0.0.1:54377 #10 (10 connections now open)
+2015-04-10T16:27:30.171+0000 [initandlisten] connection accepted from 127.0.0.1:54378 #11 (11 connections now open)
+2015-04-10T16:31:32.936+0000 [clientcursormon] mem (MB) res:39 virt:469
+2015-04-10T16:31:32.936+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-10T16:31:32.936+0000 [clientcursormon]  connections:11
