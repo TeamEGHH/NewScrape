@@ -11,7 +11,7 @@ $(function() {
         });
 
     var wall = new freewall("#freewall");
-
+    var skip = false;
     wall.reset({
         selector: '.brick',
         animate: true,
@@ -27,10 +27,23 @@ $(function() {
      * to index.html
      */
     function fetch_and_display() {
-        $.get("/loadnews", function(data) {
-            var json = $.parseJSON(data);
-            success: writeHTML(json);
-        });
+        if (!skip) {
+            $.get("/loadnews0", function(data) {
+                var json = $.parseJSON(data);
+                success: writeHTML(json).done(function() {
+                    afterHTMLLoad(json);
+                    skip = true;
+                });
+            });
+        }
+        else{
+            $.get("/loadnews20", function(data) {
+                var json = $.parseJSON(data);
+                success: writeHTML(json).done(function() {
+                    afterHTMLLoad(json);
+                });
+            });    
+        }
     }
 
     /*
