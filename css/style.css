@@ -109,6 +109,7 @@ body {
     transition: background-color .3s ease;
 }
 
+/*Filters*/
 .header-container {
 	transition: all 3s ease;
     position: fixed;
@@ -120,8 +121,35 @@ body {
        -moz-box-shadow: 0px 0px 8px 2px #000000;
             box-shadow: 0px 0px 8px 2px #000000;
 
-    opacity: .98;
     margin-bottom: 5em;
     font-size: 0.75rem;
-    font-color: red;
+}
+
+.filter-medium {
+  margin: 10px;
+  font-color: white;
+}
+
+.clicked {
+  opacity: 0.5;
+}
+
+#filter-DV {
+  background-color: pink;
+}
+
+#filter-MBL {
+  background-color: blue;
+}
+
+#filter-NUTIMINN {
+  background-color: orange;
+}
+
+#filter-RUV {
+  background-color: green;
+}
+
+#filter-VISIR {
+  background-color: yellow;
 }

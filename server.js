@@ -5,6 +5,8 @@ var app = express();
 var g_skip = 0;
 var g_batch = 20;
 
+var g_query = {};
+
 /* serves main page */
 app.get("/", function (req, res) {
     res.sendfile('index.html')
@@ -13,9 +15,21 @@ app.get("/", function (req, res) {
 /*
  * Loads x many news from our mongo database
  */
-app.get("/loadnews0", function (req, res) {
-    g_skip = 0;
-    Articles.find().sort({time: -1}).skip(g_skip).limit(g_batch)
+app.get("/filterArray/:filter", function (req, res) {
+    var filters = req.params.filter.split(',');
+    var rass = [];
+    for (var i = 1; i <= filters.length - 1; i++) {
+        rass.push({medium: filters[i]})
+    };
+    g_query["$or"] = rass;
+    console.log(g_query);
+});
+
+app.get("/loadnews/:count", function (req, res) {
+    if (req.params.count == 0) {
+        g_skip = 0;
+    };
+    Articles.find(g_query).sort({time: -1}).skip(g_skip).limit(g_batch)
         .execQ()
         .then(function (result) {
             res.send(JSON.stringify(result));
@@ -25,23 +39,6 @@ app.get("/loadnews0", function (req, res) {
         })
         .done();
         g_skip += g_batch;
-});
-
-app.get("/loadnews20", function (req, res) {
-    Articles.find().sort({time: -1}).skip(g_skip).limit(g_batch)
-        .execQ()
-    	.then(function (result) {
-    		res.send(JSON.stringify(result));
-    	})
-    	.catch(function (err) {
-    		console.log(err);
-    	})
-    	.done();
-        g_skip += g_batch;
-});
-
-app.get('/init', function (req, res) {
-    g_skip = 0;
 });
 
 app.get("/article/:id", function(req, res) {
