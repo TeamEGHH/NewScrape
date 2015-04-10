@@ -4,6 +4,7 @@ var $ = require('jquery');
 var app = express();
 var g_skip = 0;
 var g_batch = 20;
+
 /* serves main page */
 app.get("/", function (req, res) {
     res.sendfile('index.html')
@@ -27,7 +28,6 @@ app.get("/loadnews0", function (req, res) {
 });
 
 app.get("/loadnews20", function (req, res) {
-	//var batch = 20;
     Articles.find().sort({time: -1}).skip(g_skip).limit(g_batch)
         .execQ()
     	.then(function (result) {
@@ -38,6 +38,10 @@ app.get("/loadnews20", function (req, res) {
     	})
     	.done();
         g_skip += g_batch;
+});
+
+app.get('/init', function (req, res) {
+    g_skip = 0;
 });
 
 app.get("/article/:id", function(req, res) {

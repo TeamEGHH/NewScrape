@@ -27,7 +27,7 @@ body {
 }
 
 .brick {
-    width: 275px;
+    width: 350px;
 }
 
 .brick .medium-and-time img {
@@ -64,15 +64,15 @@ body {
 }
 
 .VISIR{
-  background-color: rgba(111, 138, 242, 0.8);
+  background-color: rgba(51, 204, 51, 0.8);
 }
 
 .MBL{
-  background-color: rgba(0, 4, 255, 0.8);
+  background-color: rgba(0, 102, 255, 0.8);
 }
 
 .RUV{
-  background-color: rgba(0, 51, 255, 0.8);
+  background-color: rgba(255, 153, 51, 0.8);
 }
 
 .NUTIMINN{
@@ -101,7 +101,7 @@ body {
 }
 
 .image-header-scroll {
-    margin-bottom: 7em;
+    margin-bottom: 10em;
 }
 
 #header {
@@ -115,7 +115,11 @@ body {
     top: 0;
     width: 100%;
     z-index: 999;
-    background-color: #202020;
+    background-color: #FFFFFF;
+     -webkit-box-shadow: 0px 0px 8px 2px #000000;
+       -moz-box-shadow: 0px 0px 8px 2px #000000;
+            box-shadow: 0px 0px 8px 2px #000000;
+
     opacity: .98;
     margin-bottom: 5em;
     font-size: 0.75rem;

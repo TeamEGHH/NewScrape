@@ -5,12 +5,12 @@
     <title>fv.is</title>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta name="description" content="Íslenskar fréttir" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/vendors/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="js/vendors/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/vendors/handlebars-v3.0.0.js"></script>
     <script type="text/javascript" src="js/vendors/freewall.js"></script>
-    <script src="js/vendors/moment.min.js"></script>
+    <script type="text/javascript" src="js/vendors/moment.min.js"></script>
 </head>
 
 <body>
@@ -64,28 +64,27 @@
             </div>
         </div>
     </div>
-    <div id="freewall" class="free-wall">
+    <div id="freewall" class="free-wall grid effect-2">
         <script type="text/x-handlebars-template" id="row_template">
-            {{#each this}}
             <div class="brick">
-                <a href="/article/{{this._id}}">
+                <a href="/article/{{_id}}">
                     <div>
-                        <div class="medium-and-time {{this.medium}}">
-                            <img class="media-icons" src='images/{{this.medium}}.gif' /> {{this.time}}
+                        <div class="medium-and-time {{medium}}">
+                            <img class="media-icons" src='images/{{medium}}.gif' /> {{time}}
                         </div>
-                        <img src="{{this.image}}" width="100%" alt="{{this.headline1}}">
+                        <img src="{{image}}" width="100%" alt="{{headline1}}">
                     </div>
-                    <div class="info">
-                        <h3>{{this.headline1}}</h3>
+                    <div class="info {{medium}}">
+                        <h3>{{headline1}}</h3>
                         <div class="hide-show">
-                            <h5>{{this.headline2}}</h5>
+                            <h5>{{headline2}}</h5>
                         </div>
                     </div>
                 </a>
             </div>
-            {{/each}}
         </script>
-        <script type="text/javascript" src="js/main.js"></script>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
