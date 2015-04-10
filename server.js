@@ -2,7 +2,8 @@ var express = require("express");
 var Articles = require('./scrape/model');
 var $ = require('jquery');
 var app = express();
-
+var g_skip = 0;
+var g_batch = 20;
 /* serves main page */
 app.get("/", function (req, res) {
     res.sendfile('index.html')
@@ -11,11 +12,23 @@ app.get("/", function (req, res) {
 /*
  * Loads x many news from our mongo database
  */
- 
- var g_skip = 0;
-app.get("/loadnews", function (req, res) {
-	var batch = 20;
-    Articles.find().sort({time: -1}).skip(g_skip).limit(batch)
+app.get("/loadnews0", function (req, res) {
+    g_skip = 0;
+    Articles.find().sort({time: -1}).skip(g_skip).limit(g_batch)
+        .execQ()
+        .then(function (result) {
+            res.send(JSON.stringify(result));
+        })
+        .catch(function (err) {
+            console.log(err);
+        })
+        .done();
+        g_skip += g_batch;
+});
+
+app.get("/loadnews20", function (req, res) {
+	//var batch = 20;
+    Articles.find().sort({time: -1}).skip(g_skip).limit(g_batch)
         .execQ()
     	.then(function (result) {
     		res.send(JSON.stringify(result));
@@ -24,7 +37,7 @@ app.get("/loadnews", function (req, res) {
     		console.log(err);
     	})
     	.done();
-        g_skip += batch;
+        g_skip += g_batch;
 });
 
 app.get("/article/:id", function(req, res) {
