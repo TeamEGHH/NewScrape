@@ -20,15 +20,20 @@ app.get("/filterArray/:filter", function (req, res) {
     var rass = [];
     for (var i = 1; i <= filters.length - 1; i++) {
         rass.push({medium: filters[i]})
-    };
-    g_query["$or"] = rass;
+    }
+    if (rass.length < 1) {
+        g_query = {};
+    }
+    else{
+        g_query["$or"] = rass;    
+    }
     console.log(g_query);
 });
 
 app.get("/loadnews/:count", function (req, res) {
     if (req.params.count == 0) {
         g_skip = 0;
-    };
+    }
     Articles.find(g_query).sort({time: -1}).skip(g_skip).limit(g_batch)
         .execQ()
         .then(function (result) {

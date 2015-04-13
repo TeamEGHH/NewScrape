@@ -104,6 +104,16 @@ $(document).ready(function() {
     });
 
     /*
+     * Load cookies
+     */
+    var filters = document.cookie.split(',');
+    for (var i = 1; i <= filters.length - 1; i++) {
+        var somestring = '#filter-' + filters[i];
+        console.log(somestring);
+        $(somestring).addClass('clicked');
+    }
+
+    /*
      * Main function to keep track of function calling
      */
     function main() {

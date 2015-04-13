@@ -135,21 +135,21 @@ body {
 }
 
 #filter-DV {
-  background-color: pink;
+  background-color: rgba(255, 0, 0, 0.95);
 }
 
 #filter-MBL {
-  background-color: blue;
+  background-color: rgba(0, 102, 255, 0.95);
 }
 
 #filter-NUTIMINN {
-  background-color: orange;
+  background-color: rgba(255, 77, 0, 0.95);
 }
 
 #filter-RUV {
-  background-color: green;
+  background-color: rgba(255, 153, 51, 0.95);
 }
 
 #filter-VISIR {
-  background-color: yellow;
+  background-color: rgba(51, 204, 51, 0.95);
 }
