@@ -72,16 +72,7 @@ $(document).ajaxComplete(function() {
     $(window).trigger('resize');
 });
 
-    /*
-     * Global variables. Marked with g_ wich indicates that it
-     * is a global variable.
-     */
-var g_menu, g_menu_pos, g_image_header;
-
 $(document).ready(function() {
-    g_menu = $('#header'); //The header div
-    g_image_header = $('.image-header');
-    g_menu_pos = g_menu.offset(); //The position of the header div
 
     /*
      * Listens for desired events
@@ -91,15 +82,6 @@ $(document).ready(function() {
         //Load more data if we hit the bottom of the page
         if ($(window).scrollTop() == $(document).height() - $(window).height()) {
             fetch_and_display();
-        }
-
-        //Make header fixed to top while scrolling
-        if ($(this).scrollTop() >= g_menu_pos.top) {
-            g_menu.addClass('header-container', 2000, 'easeInBack');
-            g_image_header.addClass('image-header-scroll', 2000, 'easeInBack');
-        } else if ($(this).scrollTop() <= g_menu_pos.top) {
-            g_menu.removeClass('header-container', 2000, 'easeInBack');
-            g_image_header.removeClass('image-header-scroll', 2000, "easeInBack");
         }
     });
 
