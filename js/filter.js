@@ -1,5 +1,6 @@
 $( ".filter-medium, .filter-tag" ).click(function() {
 	$(this).toggleClass('clicked');
+	console.log("clicked");
 });
 
 function checkFilters(){

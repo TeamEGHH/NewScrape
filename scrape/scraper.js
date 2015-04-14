@@ -149,7 +149,7 @@ Scraper.prototype.parsePage = function (html) {
                 headline2    = data.find(medium.headline2).clone().children().remove().end().text();
                 headline2    = headline2.replace(/\n|\n\n/g, "");
                 if(data.find(medium.image).attr('data-mbl-postload') == undefined){
-                    image    = "https://pbs.twimg.com/profile_images/490161016605405184/X_7d1m5g_400x400.jpeg";
+                    return true;
                 } else{
                     image    = medium.url + data.find(medium.image).attr('data-mbl-postload');
                 }

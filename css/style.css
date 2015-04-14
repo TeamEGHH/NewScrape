@@ -32,7 +32,7 @@ body {
 }
 
 body {
-    background: #232323;
+    background: #121212;
 }
 
 .free-wall {
@@ -59,6 +59,7 @@ body {
     padding-top: 0.2em;
     z-index: 5;
     height: 2em;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
 }
 
 .medium-and-time-pos {
@@ -96,10 +97,63 @@ body {
     background-color: rgba(255, 0, 0, 0.8);
 }
 
+
+.VISIR-button p {
+    border: 1px solid rgba(51, 204, 51, 0.8);
+}
+
+.MBL-button p {
+    border: 1px solid rgba(0, 102, 255, 0.8);
+}
+
+.RUV-button p {
+    border: 1px solid rgba(255, 153, 51, 0.8);
+}
+
+.NUTIMINN-button p {
+    border: 1px solid rgba(255, 77, 0, 0.8);
+}
+
+.DV-button p {
+    border: 1px solid rgba(255, 0, 0, 0.8);
+}
+
+.VISIR-button:hover p, .VISIR-button.clicked p {
+    background-color: rgba(51, 204, 51, 0.8);
+    transition: all .3s ease;
+}
+
+.MBL-button:hover p, .MBL-button.clicked p {
+    background-color: rgba(0, 102, 255, 0.8);
+    transition: all .3s ease;
+}
+
+.RUV-button:hover p, .RUV-button.clicked p {
+    background-color: rgba(255, 153, 51, 0.8);
+    transition: all .3s ease;
+}
+
+.NUTIMINN-button:hover p, .NUTIMINN-button.clicked p {
+    background-color: rgba(255, 77, 0, 0.8);
+    transition: all .3s ease;
+}
+
+.DV-button:hover p, .DV-button.clicked p{
+    background-color: rgba(255, 0, 0, 0.8);
+    transition: all .3s ease;
+}
+
 .info {
     padding: 15px;
     color: #333;
 }
+
+.filter-tag.clicked p {
+  background-color: rgba(255, 0, 0, 0.8);
+  transition: all .3s ease;
+}
+
+
 
 .brick img {
     margin: 0px;
@@ -118,7 +172,7 @@ body {
 }
 
 #header {
-    color: red;
+    color: #fff;
     transition: all .3s ease;
 }
 /*Filters*/
@@ -134,28 +188,24 @@ body {
     -moz-box-shadow: 0px 0px 8px 2px #000000;
     box-shadow: 0px 0px 8px 2px #000000;
     margin-bottom: 5em;
-    font-size: 1em;
-}
-
-.clicked p {
-    background-color: #000;
+    font-size: .9em;
 }
 
 .medium-filter {
-    margin: 1em;
-    line-height: 3em;
+    margin-top: .75em;
     border-radius: 10px;
-    background-color: #232323;
+    background-color: #121212;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid red;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    font-size: 1.5em;
 }
 
-.medium-filter:hover {
+.filter-medium p:hover {
     cursor: pointer;
 }
 
@@ -169,16 +219,43 @@ body {
 
 .tag-filter {
     border-radius: 10px;
-    background-color: #232323;
+    background-color: #121212;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid red;
+    border: 1px solid #eee;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    font-size: 1.5em;
+}
+
+.tag-filter:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  transition: all .3s ease;
+}
+
+.filter-save {
+    border-radius: 10px;
+    background-color: #121212;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #eee;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    font-size: 1.5em;
+    cursor: pointer
+}
+
+.filter-save:hover {
+  background-color: rgba(51, 204, 51, 0.8);
+  transition: all .3s ease;
 }
 
 .filter-tag:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
