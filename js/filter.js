@@ -1,4 +1,3 @@
-var filterArray = [];
 $( ".filter-medium" ).click(function() {
 	$(this).toggleClass('clicked');
 });
@@ -18,3 +17,4 @@ function checkFilters(){
 $( ".filter-save" ).click(function() {
 	checkFilters();
 });
+

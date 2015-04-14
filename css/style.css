@@ -153,3 +153,8 @@ body {
 #filter-VISIR {
   background-color: rgba(51, 204, 51, 0.95);
 }
+
+.filter-medium {
+    font-family: "Eras ITC", "Eras Light ITC",  sans-serif ;
+    font-size: 18px;
+}
