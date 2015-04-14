@@ -1,4 +1,4 @@
-$( ".filter-medium" ).click(function() {
+$( ".filter-medium, .filter-tag" ).click(function() {
 	$(this).toggleClass('clicked');
 });
 
@@ -16,5 +16,6 @@ function checkFilters(){
 
 $( ".filter-save" ).click(function() {
 	checkFilters();
+	location.reload();
 });
 

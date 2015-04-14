@@ -20,10 +20,10 @@ wall.reset({
     }
 });
 
-    /*
-     * Fetch data from mongodb and append the data
-     * to index.html
-     */
+/*
+ * Fetch data from mongodb and append the data
+ * to index.html
+ */
 function fetch_and_display() {
     if (!skip) {
         $.get("/loadnews/0", function(data) {
@@ -39,10 +39,10 @@ function fetch_and_display() {
     }
 }
 
-    /*
-     * Helper function for fetch_and_display:
-     * Writes data to html using Handlebars.js
-     */
+/*
+ * Helper function for fetch_and_display:
+ * Writes data to html using Handlebars.js
+ */
 function writeHTML(data) {
     //Edit time format
     for (var i = 0; i < data.length; i++) {
@@ -56,9 +56,9 @@ function writeHTML(data) {
     });
 }
 
-    /*
-     * Stuff to do when ajax is request is complete
-     */
+/*
+ * Stuff to do when ajax is request is complete
+ */
 $(document).ajaxComplete(function() {
 
     wall.container.find('.brick img').load(function() {
@@ -72,10 +72,10 @@ $(document).ajaxComplete(function() {
     $(window).trigger('resize');
 });
 
-    /*
-     * Global variables. Marked with g_ wich indicates that it
-     * is a global variable.
-     */
+/*
+ * Global variables. Marked with g_ wich indicates that it
+ * is a global variable.
+ */
 var g_menu, g_menu_pos, g_image_header;
 
 $(document).ready(function() {
@@ -109,19 +109,11 @@ $(document).ready(function() {
     var filters = document.cookie.split(',');
     for (var i = 1; i <= filters.length - 1; i++) {
         var somestring = '#filter-' + filters[i];
-        console.log(somestring);
         $(somestring).addClass('clicked');
     }
 
-    /*
-     * Main function to keep track of function calling
-     */
-    function main() {
-        fetch_and_display();
-    }
-
-    //Kick things off
-    main();
+    //kick things off
+    fetch_and_display();
 });
 
 $(window).trigger('resize');

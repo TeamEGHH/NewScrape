@@ -4385,3 +4385,133 @@ Raunveruleikastjarnan virðist ekki geta haldið sig í fötunum
 2015-04-13T21:18:35.376+0000 [clientcursormon] mem (MB) res:41 virt:469
 2015-04-13T21:18:35.376+0000 [clientcursormon]  mapped (incl journal view):320
 2015-04-13T21:18:35.376+0000 [clientcursormon]  connections:11
+2015-04-14T20:58:50.736+0000 ***** SERVER RESTARTED *****
+2015-04-14T20:58:50.736+0000 [initandlisten] MongoDB starting : pid=10208 port=27017 dbpath=C:/Users/91hjo_000/Desktop/NewScrape/data 64-bit host=Hjortur
+2015-04-14T20:58:50.736+0000 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-04-14T20:58:50.736+0000 [initandlisten] db version v2.6.7
+2015-04-14T20:58:50.736+0000 [initandlisten] git version: a7d57ad27c382de82e9cb93bf983a80fd9ac9899
+2015-04-14T20:58:50.736+0000 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-04-14T20:58:50.736+0000 [initandlisten] allocator: system
+2015-04-14T20:58:50.736+0000 [initandlisten] options: { config: "mongodb.conf", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "C:/Users/91hjo_000/Desktop/NewScrape/data", directoryPerDB: true, journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/Users/91hjo_000/Desktop/NewScrape/scrape/mongodb.log" } }
+2015-04-14T20:58:50.736+0000 [initandlisten] exception in initAndListen: 10296 
+*********************************************************************
+ ERROR: dbpath (C:/Users/91hjo_000/Desktop/NewScrape/data) does not exist.
+ Create this directory or give existing directory in --dbpath.
+ See http://dochub.mongodb.org/core/startingandstoppingmongo
+*********************************************************************
+, terminating
+2015-04-14T20:58:50.736+0000 [initandlisten] dbexit: 
+2015-04-14T20:58:50.736+0000 [initandlisten] shutdown: going to close listening sockets...
+2015-04-14T20:58:50.736+0000 [initandlisten] shutdown: going to flush diaglog...
+2015-04-14T20:58:50.736+0000 [initandlisten] shutdown: going to close sockets...
+2015-04-14T20:58:50.736+0000 [initandlisten] shutdown: waiting for fs preallocator...
+2015-04-14T20:58:50.736+0000 [initandlisten] shutdown: lock for final commit...
+2015-04-14T20:58:50.736+0000 [initandlisten] shutdown: final commit...
+2015-04-14T20:58:50.736+0000 [initandlisten] shutdown: closing all files...
+2015-04-14T20:58:50.736+0000 [initandlisten] closeAllFiles() finished
+2015-04-14T20:58:50.736+0000 [initandlisten] dbexit: really exiting now
+2015-04-14T20:59:00.394+0000 ***** SERVER RESTARTED *****
+2015-04-14T20:59:00.394+0000 [initandlisten] MongoDB starting : pid=10804 port=27017 dbpath=C:/Users/91hjo_000/Desktop/NewScrape/data 64-bit host=Hjortur
+2015-04-14T20:59:00.394+0000 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-04-14T20:59:00.394+0000 [initandlisten] db version v2.6.7
+2015-04-14T20:59:00.394+0000 [initandlisten] git version: a7d57ad27c382de82e9cb93bf983a80fd9ac9899
+2015-04-14T20:59:00.394+0000 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-04-14T20:59:00.394+0000 [initandlisten] allocator: system
+2015-04-14T20:59:00.394+0000 [initandlisten] options: { config: "mongodb.conf", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "C:/Users/91hjo_000/Desktop/NewScrape/data", directoryPerDB: true, journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/Users/91hjo_000/Desktop/NewScrape/scrape/mongodb.log" } }
+2015-04-14T20:59:00.410+0000 [initandlisten] journal dir=C:/Users/91hjo_000/Desktop/NewScrape/data\journal
+2015-04-14T20:59:00.410+0000 [initandlisten] recover : no journal files present, no recovery needed
+2015-04-14T20:59:00.456+0000 [initandlisten] allocating new ns file C:/Users/91hjo_000/Desktop/NewScrape/data\local\local.ns, filling with zeroes...
+2015-04-14T20:59:00.488+0000 [FileAllocator] allocating new datafile C:/Users/91hjo_000/Desktop/NewScrape/data\local\local.0, filling with zeroes...
+2015-04-14T20:59:00.488+0000 [FileAllocator] creating directory C:/Users/91hjo_000/Desktop/NewScrape/data\local\_tmp
+2015-04-14T20:59:00.503+0000 [FileAllocator] done allocating datafile C:/Users/91hjo_000/Desktop/NewScrape/data\local\local.0, size: 64MB,  took 0 secs
+2015-04-14T20:59:00.503+0000 [initandlisten] build index on: local.startup_log properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }
+2015-04-14T20:59:00.503+0000 [initandlisten] 	 added index to empty collection
+2015-04-14T20:59:00.503+0000 [initandlisten] waiting for connections on port 27017
+2015-04-14T20:59:04.273+0000 [initandlisten] connection accepted from 127.0.0.1:64196 #1 (1 connection now open)
+2015-04-14T20:59:17.023+0000 [initandlisten] connection accepted from 127.0.0.1:64197 #2 (2 connections now open)
+2015-04-14T20:59:17.023+0000 [initandlisten] connection accepted from 127.0.0.1:64198 #3 (3 connections now open)
+2015-04-14T20:59:17.023+0000 [initandlisten] connection accepted from 127.0.0.1:64199 #4 (4 connections now open)
+2015-04-14T20:59:17.023+0000 [initandlisten] connection accepted from 127.0.0.1:64200 #5 (5 connections now open)
+2015-04-14T20:59:17.023+0000 [initandlisten] connection accepted from 127.0.0.1:64201 #6 (6 connections now open)
+2015-04-14T20:59:17.023+0000 [conn4] allocating new ns file C:/Users/91hjo_000/Desktop/NewScrape/data\test\test.ns, filling with zeroes...
+2015-04-14T20:59:17.086+0000 [FileAllocator] allocating new datafile C:/Users/91hjo_000/Desktop/NewScrape/data\test\test.0, filling with zeroes...
+2015-04-14T20:59:17.086+0000 [FileAllocator] creating directory C:/Users/91hjo_000/Desktop/NewScrape/data\test\_tmp
+2015-04-14T20:59:17.086+0000 [FileAllocator] done allocating datafile C:/Users/91hjo_000/Desktop/NewScrape/data\test\test.0, size: 64MB,  took 0 secs
+2015-04-14T20:59:17.086+0000 [conn4] build index on: test.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "test.articles" }
+2015-04-14T20:59:17.086+0000 [conn4] 	 added index to empty collection
+2015-04-14T20:59:17.086+0000 [conn4] build index on: test.articles properties: { v: 1, unique: true, key: { headline1: 1 }, name: "headline1_1", ns: "test.articles", background: true, safe: null }
+2015-04-14T20:59:17.086+0000 [conn4] 	 added index to empty collection
+2015-04-14T20:59:17.086+0000 [conn6] build index on: test.articles properties: { v: 1, unique: true, key: { headline2: 1 }, name: "headline2_1", ns: "test.articles", background: true, safe: null }
+2015-04-14T20:59:17.086+0000 [conn6] 	 added index to empty collection
+2015-04-14T20:59:36.415+0000 [initandlisten] connection accepted from 127.0.0.1:64202 #7 (7 connections now open)
+2015-04-14T20:59:36.415+0000 [initandlisten] connection accepted from 127.0.0.1:64203 #8 (8 connections now open)
+2015-04-14T20:59:36.415+0000 [initandlisten] connection accepted from 127.0.0.1:64204 #9 (9 connections now open)
+2015-04-14T20:59:36.415+0000 [initandlisten] connection accepted from 127.0.0.1:64205 #10 (10 connections now open)
+2015-04-14T20:59:36.415+0000 [initandlisten] connection accepted from 127.0.0.1:64206 #11 (11 connections now open)
+2015-04-14T21:00:00.535+0000 [clientcursormon] mem (MB) res:39 virt:471
+2015-04-14T21:00:00.535+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:00:00.535+0000 [clientcursormon]  connections:11
+2015-04-14T21:05:01.054+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-04-14T21:05:01.054+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:05:01.054+0000 [clientcursormon]  connections:11
+2015-04-14T21:10:01.567+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-04-14T21:10:01.567+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:10:01.567+0000 [clientcursormon]  connections:11
+2015-04-14T21:15:02.071+0000 [clientcursormon] mem (MB) res:42 virt:469
+2015-04-14T21:15:02.071+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:15:02.071+0000 [clientcursormon]  connections:11
+2015-04-14T21:20:02.416+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-04-14T21:20:02.416+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:20:02.416+0000 [clientcursormon]  connections:11
+2015-04-14T21:25:02.816+0000 [clientcursormon] mem (MB) res:42 virt:469
+2015-04-14T21:25:02.816+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:25:02.816+0000 [clientcursormon]  connections:11
+2015-04-14T21:30:03.269+0000 [clientcursormon] mem (MB) res:42 virt:469
+2015-04-14T21:30:03.269+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:30:03.269+0000 [clientcursormon]  connections:11
+2015-04-14T21:35:03.669+0000 [clientcursormon] mem (MB) res:42 virt:469
+2015-04-14T21:35:03.669+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:35:03.669+0000 [clientcursormon]  connections:11
+2015-04-14T21:40:04.091+0000 [clientcursormon] mem (MB) res:41 virt:469
+2015-04-14T21:40:04.091+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:40:04.091+0000 [clientcursormon]  connections:11
+2015-04-14T21:45:04.651+0000 [clientcursormon] mem (MB) res:42 virt:469
+2015-04-14T21:45:04.651+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:45:04.651+0000 [clientcursormon]  connections:11
+2015-04-14T21:50:05.119+0000 [clientcursormon] mem (MB) res:42 virt:469
+2015-04-14T21:50:05.119+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:50:05.119+0000 [clientcursormon]  connections:11
+2015-04-14T21:55:05.685+0000 [clientcursormon] mem (MB) res:42 virt:469
+2015-04-14T21:55:05.685+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T21:55:05.685+0000 [clientcursormon]  connections:11
+2015-04-14T22:00:06.275+0000 [clientcursormon] mem (MB) res:42 virt:469
+2015-04-14T22:00:06.275+0000 [clientcursormon]  mapped (incl journal view):320
+2015-04-14T22:00:06.275+0000 [clientcursormon]  connections:11
+2015-04-14T22:03:51.255+0000 CTRL_CLOSE_EVENT signal
+2015-04-14T22:03:51.255+0000 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-04-14T22:03:51.255+0000 [consoleTerminate] now exiting
+2015-04-14T22:03:51.255+0000 [consoleTerminate] dbexit: 
+2015-04-14T22:03:51.255+0000 [consoleTerminate] shutdown: going to close listening sockets...
+2015-04-14T22:03:51.255+0000 [consoleTerminate] closing listening socket: 504
+2015-04-14T22:03:51.255+0000 [consoleTerminate] shutdown: going to flush diaglog...
+2015-04-14T22:03:51.255+0000 [consoleTerminate] shutdown: going to close sockets...
+2015-04-14T22:03:51.255+0000 [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-04-14T22:03:51.255+0000 [consoleTerminate] shutdown: lock for final commit...
+2015-04-14T22:03:51.255+0000 [consoleTerminate] shutdown: final commit...
+2015-04-14T22:03:51.255+0000 [conn6] end connection 127.0.0.1:64201 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn1] end connection 127.0.0.1:64196 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn3] end connection 127.0.0.1:64198 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn2] end connection 127.0.0.1:64197 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn4] end connection 127.0.0.1:64199 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn5] end connection 127.0.0.1:64200 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn10] end connection 127.0.0.1:64205 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn11] end connection 127.0.0.1:64206 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn7] end connection 127.0.0.1:64202 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn9] end connection 127.0.0.1:64204 (10 connections now open)
+2015-04-14T22:03:51.255+0000 [conn8] end connection 127.0.0.1:64203 (9 connections now open)
+2015-04-14T22:03:51.270+0000 [consoleTerminate] shutdown: closing all files...
+2015-04-14T22:03:51.270+0000 [consoleTerminate] closeAllFiles() finished
+2015-04-14T22:03:51.270+0000 [consoleTerminate] journalCleanup...
+2015-04-14T22:03:51.270+0000 [consoleTerminate] removeJournalFiles
+2015-04-14T22:03:51.270+0000 [consoleTerminate] shutdown: removing fs lock...
+2015-04-14T22:03:51.270+0000 [consoleTerminate] dbexit: really exiting now
