@@ -106,10 +106,23 @@ $(document).ready(function() {
     /*
      * Load cookies
      */
-    var filters = document.cookie.split(',');
-    for (var i = 1; i <= filters.length - 1; i++) {
-        var somestring = '#filter-' + filters[i];
-        $(somestring).addClass('clicked');
+    var filters = document.cookie.split(';');
+    var mainFilters = filters[0].split(',');
+    if (filters[1] !== undefined) {
+        var subFilters = filters[1].split(',');
+        //Set clicked class on subfilters
+        for (var i = 1; i <= subFilters.length - 1; i++) {
+            var subFilterStr = "#filter-sub-" + subFilters[i];
+            $(subFilterStr).addClass('clicked');
+        }
+        console.log(subFilters);
+    }
+    console.log(filters);
+    console.log(mainFilters);
+    //Set clicked class on mainfilters
+    for (var i = 1; i <= mainFilters.length - 1; i++) {
+        var mainFilterStr = '#filter-' + mainFilters[i];
+        $(mainFilterStr).addClass('clicked');
     }
 
     //kick things off

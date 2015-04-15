@@ -6,7 +6,7 @@ var g_skip = 0;
 var g_batch = 20;
 
 var g_query = {};
-
+var sub_query = {};
 /* serves main page */
 app.get("/", function (req, res) {
     res.sendfile('index.html')
@@ -16,18 +16,37 @@ app.get("/", function (req, res) {
  * Loads x many news from our mongo database
  */
 app.get("/filterArray/:filter", function (req, res) {
-    var filters = req.params.filter.split(',');
-    var rass = [];
-    for (var i = 1; i <= filters.length - 1; i++) {
-        rass.push({medium: filters[i]})
+    var filters = req.params.filter.split(';');
+    var mainFilters = filters[0].split(',');
+    var subFilters = filters[1].split(',');
+    //console.log(mainFilters);
+    //console.log(subFilters);
+
+    var sub_arr = [];
+    for (var i = 1; i <= subFilters.length - 1; i++) {
+        sub_arr.push({tags: subFilters[i]});
     }
-    if (rass.length < 1) {
+
+    var main_arr = [];
+    for (var i = 1; i <= mainFilters.length - 1; i++) {
+        var tmp = {};
+
+        tmp["medium"] = mainFilters[i];
+        tmp["$or"] = sub_arr;
+        if (sub_arr.length < 1) {
+            tmp["$or"] = [{}];
+        }
+        
+        main_arr.push(tmp)
+    }
+    //console.log(tmp);
+    if (main_arr.length < 1) {
         g_query = {};
     }
     else{
-        g_query["$or"] = rass;    
+        g_query["$or"] = main_arr;    
     }
-    console.log(g_query);
+    //console.log(g_query);
 });
 
 app.get("/loadnews/:count", function (req, res) {
