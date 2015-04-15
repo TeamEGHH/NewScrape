@@ -77,7 +77,7 @@ Scraper.prototype.parsePage = function (html) {
         request.get({
             headers: {
                 'User-Agent': 'SomeUser',
-                'content-type': 'text/html;charset=UTF-8'
+                'content-type': 'text/html;charset=iso-8859-1'
             },
             url: self.url,
             encoding: null
@@ -137,7 +137,11 @@ Scraper.prototype.parsePage = function (html) {
                 headline1    = headline1.replace(/(\r\n|\n|\r|\t)/gm, "");
                 headline2    = data.find(medium.headline2).text();
                 headline2    = headline2.replace(/(\r\n|\n|\r|\t)/gm, "");
-                image        = data.find(medium.image).attr('src');
+                if(data.find(medium.image).attr('src') == "/support/images/blank.gif") {
+                    return true;
+                }else {
+                    image    = data.find(medium.image).attr('src');
+                }
                 href         = medium.url + data.find(medium.hreflink).attr('href');
                 time         = getTimeStamp();
                 tags         = getTags();

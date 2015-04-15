@@ -1,11 +1,10 @@
 body {
-    background: #e8e8e8;
     font-family: 'Helvetica Neue', Helvetica, Arial;
     font-size: 12px;
+    background-image: url('/images/background.jpg');
 }
 
 .brick {
-    background: white;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
     border-radius: 3px;
     color: #333;
@@ -29,10 +28,6 @@ body {
     width: 100%;
     max-width: 100%;
     display: block;
-}
-
-body {
-    background: #121212;
 }
 
 .free-wall {
@@ -145,7 +140,7 @@ body {
 
 .info {
     padding: 15px;
-    color: #333;
+    color: white;
 }
 
 .filter-tag.clicked p {
@@ -210,11 +205,12 @@ body {
 }
 
 .headline1 {
-    font-size: 2em;
+    font-size: 1.7em;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
 }
 
 .headline2 {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .tag-filter {
