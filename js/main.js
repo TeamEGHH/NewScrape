@@ -79,6 +79,19 @@ $(document).ajaxComplete(function() {
 var g_menu, g_menu_pos, g_image_header;
 
 $(document).ready(function() {
+
+    var mobileTest;
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        mobileTest = true;
+    }
+
+    if (mobileTest) {
+        $('#filter-DV').removeClass('col-sm-offset-1');
+        $('#tag-innlent').removeClass('col-sm-offset-2');
+    }
+
+
     g_menu = $('#header'); //The header div
     g_image_header = $('.image-header');
     g_menu_pos = g_menu.offset(); //The position of the header div
@@ -94,12 +107,26 @@ $(document).ready(function() {
         }
 
         //Make header fixed to top while scrolling
-        if ($(this).scrollTop() >= g_menu_pos.top) {
+        if ($(this).scrollTop() >= g_menu_pos.top && !mobileTest && !widthTest) {
             g_menu.addClass('header-container', 2000, 'easeInBack');
             g_image_header.addClass('image-header-scroll', 2000, 'easeInBack');
         } else if ($(this).scrollTop() <= g_menu_pos.top) {
             g_menu.removeClass('header-container', 2000, 'easeInBack');
             g_image_header.removeClass('image-header-scroll', 2000, "easeInBack");
+        }
+    });
+
+    var widthTest;
+    $(window).resize(function() {
+        if ($(this).width() < 768) {
+            $('#filter-DV').removeClass('col-sm-offset-1');
+            $('#tag-innlent').removeClass('col-sm-offset-2');
+            widthTest = true;
+        }
+        else {
+            $('#filter-DV').addClass('col-sm-offset-1');
+            $('#tag-innlent').addClass('col-sm-offset-2');
+            widthTest = false;
         }
     });
 
